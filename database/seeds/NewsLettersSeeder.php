@@ -11,6 +11,6 @@ class NewsLettersSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\productosboca\NewsLetter::class, 40)->create();
     }
 }

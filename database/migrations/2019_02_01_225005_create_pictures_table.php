@@ -15,7 +15,19 @@ class CreatePicturesTable extends Migration
     {
         Schema::create('pictures', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->string('name');
+            $table->string('url');
+
+            $table->integer('product_id')->unsigned();
+
             $table->timestamps();
+
+            // Relaciones
+
+            $table->foreign('product_id')->references('id')->on('products')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
         });
     }
 

@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "productosboca\\": "app/"
         },
         "classmap": [
             "database/seeds",

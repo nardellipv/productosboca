@@ -11,6 +11,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\productosboca\User::class, 1)->create();
     }
 }

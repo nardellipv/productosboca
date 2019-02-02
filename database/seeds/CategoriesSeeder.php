@@ -11,6 +11,6 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\productosboca\Category::class, 4)->create();
     }
 }

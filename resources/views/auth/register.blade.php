@@ -1,77 +1,200 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
+    <div class="content">
+        <!--login-->
+        <div class="login">
+            <div class="main-agileits">
+                <div class="form-w3agile form1">
+                    <h3>Crear Cuenta</h3>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
+                        <div class="key">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Nombre" value="{{ old('name') }}"
+                                   class="{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" required="">
+                            @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
-                                @endif
-                            </div>
+                            @endif
+                            <div class="clearfix"></div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
+                        <div class="key">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Apellido" value="{{ old('lastname') }}"
+                                   class="{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname"
+                                   required="">
+                            @if ($errors->has('lastname'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('lastname') }}</strong>
+                                    </span>
+                            @endif
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="key">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" placeholder="email" name="email" required="" value="{{ old('email') }}"
+                                   class="{{ $errors->has('email') ? ' is-invalid' : '' }}">
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
-                                @endif
-                            </div>
+                            @endif
+                            <div class="clearfix"></div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                        <div class="key">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Dirección" value="{{ old('address') }}"
+                                   class="{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address"
+                                   required="">
+                            @if ($errors->has('address'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('address') }}</strong>
+                                    </span>
+                            @endif
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="key">
+                            <select class="form-control" id="id_state" name="state">
+                                <option value="">Seleccione su provincia</option>
+                                <option value="CIUDAD AUTÓNOMA DE BUENOS AIRES">
+                                    Ciudad Autónoma de Buenos Aires
+                                </option>
+                                <option value="BUENOS AIRES">
+                                    Buenos Aires
+                                </option>
+                                <option value="CATAMARCA">
+                                    Catamarca
+                                </option>
+                                <option value="CHACO">
+                                    Chaco
+                                </option>
+                                <option value="CHUBUT">
+                                    Chubut
+                                </option>
+                                <option value="CORRIENTES">
+                                    Corrientes
+                                </option>
+                                <option value="CÓRDOBA">
+                                    Córdoba
+                                </option>
+                                <option value="ENTRE RÍOS">
+                                    Entre Ríos
+                                </option>
+                                <option value="FORMOSA">
+                                    Formosa
+                                </option>
+                                <option value="JUJUY">
+                                    Jujuy
+                                </option>
+                                <option value="LA PAMPA">
+                                    La Pampa
+                                </option>
+                                <option value="LA RIOJA">
+                                    La Rioja
+                                </option>
+                                <option value="MENDOZA">
+                                    Mendoza
+                                </option>
+                                <option value="MISIONES">
+                                    Misiones
+                                </option>
+                                <option value="NEUQUÉN">
+                                    Neuquén
+                                </option>
+                                <option value="RÍO NEGRO">
+                                    Río Negro
+                                </option>
+                                <option value="SALTA">
+                                    Salta
+                                </option>
+                                <option value="SAN JUAN">
+                                    San Juan
+                                </option>
+                                <option value="SAN LUIS">
+                                    San Luis
+                                </option>
+                                <option value="SANTA CRUZ">
+                                    Santa Cruz
+                                </option>
+                                <option value="SANTA FE">
+                                    Santa Fe
+                                </option>
+                                <option value="SANTIAGO DEL ESTERO">
+                                    Santiago Del Estero
+                                </option>
+                                <option value="TIERRA DEL FUEGO">
+                                    Tierra Del Fuego
+                                </option>
+                                <option value="TUCUMÁN">
+                                    Tucumán
+                                </option>
+                            </select>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="key">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Localidad" value="{{ old('city') }}"
+                                   class="{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city"
+                                   required="">
+                            @if ($errors->has('city'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('city') }}</strong>
+                                    </span>
+                            @endif
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="key">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Código Postal" value="{{ old('postalcode') }}"
+                                   class="{{ $errors->has('postalcode') ? ' is-invalid' : '' }}" name="postalcode"
+                                   required="">
+                            @if ($errors->has('postalcode'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('postalcode') }}</strong>
+                                    </span>
+                            @endif
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="key">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" placeholder="Teléfono" value="{{ old('phone') }}"
+                                   class="{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone"
+                                   required="">
+                            @if ($errors->has('phone'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                            @endif
+                            <div class="clearfix"></div>
+                        </div>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
+                        <div class="key">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input type="password" placeholder="Password" name="password" required=""
+                                   class="{{ $errors->has('password') ? ' is-invalid' : '' }}">
+                            @if ($errors->has('password'))
+                                <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                @endif
-                            </div>
+                            @endif
+                            <div class="clearfix"></div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
+                        <div class="key">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input type="password" placeholder="Confirmar Password" name="password_confirmation"
+                                   required="">
+                            <div class="clearfix"></div>
                         </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
+                        <input type="submit" value="{{ __('Registrarme') }}">
                     </form>
                 </div>
+
             </div>
         </div>
+        <!--login-->
     </div>
-</div>
 @endsection

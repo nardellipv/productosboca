@@ -8,7 +8,7 @@
                 @if (Auth::check())
                     <li>Bienvenido {{ Auth::user()->name }}</li>
                 @endif
-                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="{{ url('carrito') }}">Checkout</a></li>
                 @if (Auth::check())
                     <li><a href="login.html">Perfíl</a></li>
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -17,8 +17,8 @@
                         @csrf
                     </form>
                 @else
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="registered.html"> Create Account </a></li>
+                    <li><a href="{{ url('login') }}">Ingresar</a></li>
+                    <li><a href="{{ url('register') }}"> Crear Cuenta </a></li>
                 @endif
             </ul>
         </div>

@@ -4,15 +4,16 @@ use Faker\Generator as Faker;
 
 $factory->define(productosboca\Checkout::class, function (Faker $faker) {
     return [
+        'email' => $faker->email,
         'name' => $faker->name,
         'lastname' => $faker->lastName,
-        'email' => $faker->email,
-        'phone' => $faker->phoneNumber,
-        'province' => $faker->state,
-        'city' => $faker->city,
         'address' => $faker->address,
-        'zip' => $faker->numberBetween('1000','9999'),
+        'state' => $faker->state,
+        'city' => $faker->city,
+        'postalcode' => $faker->numberBetween('1000','9999'),
+        'phone' => $faker->phoneNumber,
         'note' => $faker->text(100),
-        'payment_id' => $faker->numberBetween('1','4'),
+        'status' =>$faker->randomElement(['EN PROCESO','COMPRA','ENVIADO','CANCELADO']),
+        'payment' => $faker->creditCardType,
     ];
 });

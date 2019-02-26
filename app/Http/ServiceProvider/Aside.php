@@ -1,0 +1,28 @@
+<?php
+
+namespace productosboca\Http\ServiceProvider;
+
+
+use productosboca\Product;
+use Illuminate\View\View;
+
+class aside
+{
+    public function compose(View $view)
+    {
+        $lastItems = Product::orderBy('created_at', 'DESC')
+            ->take(4)
+            ->get();
+
+        $lastFourItems = Product::orderBy('created_at', 'DESC')
+            ->skip(4)
+            ->take(4)
+            ->get();
+
+
+        $view->with([
+            'lastFourItems' => $lastFourItems,
+            'lastItems' => $lastItems
+        ]);
+    }
+}

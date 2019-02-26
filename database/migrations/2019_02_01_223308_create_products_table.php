@@ -20,8 +20,12 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->integer('offer')->nullable();
             $table->integer('quantity');
-            $table->time('time_offer')->nullable();
-            $table->string('cupon_code')->nullable();
+            $table->text('description');
+            $table->enum('section',['BANNER','NEW','MOSTSELL','OTHER']);
+            $table->string('photo');
+            $table->float('rating',3,0);
+            $table->string('slug');
+            $table->date('time_offer')->nullable();
 
             $table->integer('category_id')->unsigned();
 

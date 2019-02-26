@@ -16,25 +16,19 @@ class CreateCheckoutsTable extends Migration
         Schema::create('checkouts', function (Blueprint $table) {
             $table->increments('id');
 
+            $table->string('email',150);
             $table->string('name');
             $table->string('lastname');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('province');
-            $table->string('city');
             $table->text('address');
-            $table->integer('zip');
+            $table->string('state');
+            $table->string('city');
+            $table->integer('postalcode');
+            $table->string('phone');
             $table->text('note')->nullable();
-
-            $table->integer('payment_id')->unsigned();
+            $table->enum('status',['EN PROCESO','COMPRA','ENVIADO','CANCELADO'])->default('EN PROCESO');
+            $table->string('payment');
 
             $table->timestamps();
-
-            // Relaciones
-
-            $table->foreign('payment_id')->references('id')->on('payments')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
         });
     }
 

@@ -1,0 +1,1 @@
+<p>la tarifa es de {{ $tarifa }}</p>

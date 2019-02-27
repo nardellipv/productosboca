@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use productosboca\Cart;
-use productosboca\Checkout;
 use productosboca\Http\Controllers\Controller;
+use productosboca\Http\Requests\DataClientProfileRequest;
 use productosboca\User;
 
 class ProfileController extends Controller
@@ -26,7 +26,7 @@ class ProfileController extends Controller
         return view('parts.profile._profile', compact('user', 'pedidos'));
     }
 
-    public function updateData($id, Request $request)
+    public function updateData($id, DataClientProfileRequest $request)
     {
         $updateData = User::find($id);
         $updateData->fill($request->except('password'))->save();

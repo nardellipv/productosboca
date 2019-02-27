@@ -2,14 +2,14 @@
 
 namespace productosboca\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use productosboca\Cart;
 use productosboca\Discount;
+use productosboca\Http\Requests\DiscountRequest;
 
 class DiscountController extends Controller
 {
-    public function coupon(Request $request)
+    public function coupon(DiscountRequest $request)
     {
         $serial_buy = Cookie::get('compra');
 
@@ -25,7 +25,7 @@ class DiscountController extends Controller
             ->get();
 
         if (empty($discount)) {
-            dd('error');
+            return back();
         }
 
         if ($discount->status == 'ACTIVE') {

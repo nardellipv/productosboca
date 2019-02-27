@@ -7,6 +7,7 @@ use Andreani\Requests\CotizarEnvio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use productosboca\Http\Requests\ReviewRequest;
 use productosboca\Picture;
 use productosboca\Product;
 use productosboca\ProductSize;
@@ -89,7 +90,7 @@ class ProductController extends Controller
         return view('parts.product._product', compact('product', 'pictures', 'sizes', 'relateds', 'tarifa', 'reviews'));
     }
 
-    public function rating($id, Request $request)
+    public function rating($id, ReviewRequest $request)
     {
         $review = new Review();
         $review->review = $request['review'];

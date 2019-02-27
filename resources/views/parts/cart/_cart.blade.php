@@ -49,12 +49,12 @@
                         <h2 style="text-align: center;">
                             Revisar orden y completar el pago
                         </h2>
-                        <hr/>
+                        <hr>
+                        @include('layouts.alerts.error')
                         <a href="{{ url('/') }}" class="btn btn-info" style="width: 100%;">Agregar más productos</a>
                         <hr>
                         @if($countCart > 0)
                             <div class="shopping_cart">
-
                                 <div class="panel-group" id="accordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
@@ -169,7 +169,7 @@
                                                             <label for="id_email">Email:</label></td>
                                                         <td>
                                                             <input class="form-control" id="id_email" name="email"
-                                                                   required="required" type="email"/>
+                                                                   required="required" type="email" value="{{ old('email') }}" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -177,7 +177,7 @@
                                                             <label for="id_first_name">Nombre:</label></td>
                                                         <td>
                                                             <input class="form-control" id="id_first_name" name="name"
-                                                                   required="required" type="text"/>
+                                                                   required="required" type="text" value="{{ old('name') }}" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -186,7 +186,7 @@
                                                         <td>
                                                             <input class="form-control" id="id_last_name"
                                                                    name="lastname"
-                                                                   required="required" type="text"/>
+                                                                   required="required" type="text" value="{{ old('lastname') }}"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -194,7 +194,7 @@
                                                             <label for="id_address_line_1">Dirección:</label></td>
                                                         <td>
                                                             <input class="form-control" id="id_address_line_1"
-                                                                   name="address" required="required" type="text"/>
+                                                                   name="address" required="required" type="text" value="{{ old('address') }}"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -283,7 +283,7 @@
                                                             <label for="id_city">Localidad:</label></td>
                                                         <td>
                                                             <input class="form-control" id="id_city" name="city"
-                                                                   required="required" type="text"/>
+                                                                   required="required" type="text" value="{{ old('city') }}"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -292,7 +292,7 @@
                                                         <td>
                                                             <input class="form-control" id="id_postalcode"
                                                                    name="postalcode"
-                                                                   required="required" type="text"/>
+                                                                   required="required" type="text" value="{{ old('postalcode') }}"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -300,7 +300,7 @@
                                                             <label for="id_phone">Teléfono:</label></td>
                                                         <td>
                                                             <input class="form-control" id="id_phone" name="phone"
-                                                                   type="text"/>
+                                                                   type="text" value="{{ old('phone') }}"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -311,7 +311,7 @@
                                                         </td>
                                                         <td>
                                                         <textarea class="form-control" id="note"
-                                                                  name="note"> </textarea>
+                                                                  name="note">{{ old('note') }}</textarea>
                                                             @if($subTotal == 0)
                                                                 <input name="price" value="{{ $totalCart }}" hidden>
                                                             @else

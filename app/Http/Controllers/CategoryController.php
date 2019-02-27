@@ -2,7 +2,6 @@
 
 namespace productosboca\Http\Controllers;
 
-use Illuminate\Http\Request;
 use productosboca\Category;
 use productosboca\Product;
 

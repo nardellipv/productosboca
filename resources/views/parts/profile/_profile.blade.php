@@ -34,6 +34,7 @@
                     </div><!--/col-3-->
                     <div class="col-sm-9">
                         @include('layouts.alerts.success')
+                        @include('layouts.alerts.error')
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#home">Mis Datos</a></li>
                             <li><a data-toggle="tab" href="#password">Contraseña</a></li>

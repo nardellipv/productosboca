@@ -2,9 +2,9 @@
 
 namespace productosboca\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
+use productosboca\Http\Requests\ContactClientRequest;
 
 class ContactController extends Controller
 {
@@ -13,7 +13,7 @@ class ContactController extends Controller
         return view('parts._contact');
     }
 
-    public function sendEmail(Request $request)
+    public function sendEmail(ContactClientRequest $request)
     {
         Mail::send('email._contactWeb', $request->all(), function ($msj) use ($request) {
             $msj->from($request->email, $request->name);

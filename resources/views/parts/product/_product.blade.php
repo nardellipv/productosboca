@@ -74,6 +74,7 @@
                 <div class="single-grids">
                     <div class="col-md-9 single-grid">
                         @include('layouts.alerts.success')
+                        @include('layouts.alerts.error')
                         <div class="single-top">
                             <div class="single-left">
                                 <div class="flexslider">
@@ -131,7 +132,7 @@
                                     <h6>Cantidad :</h6>
                                     <div class="quantity">
                                         <div class="quantity-select">
-                                            <input type="number" min="1" max="10" class="entry value1" name="quantity"
+                                            <input type="number" min="1" max="20" class="entry value1" name="quantity"
                                                    style="width: 15%;" placeholder="1" value="1">
                                         </div>
                                     </div>
@@ -233,32 +234,33 @@
                                                     @if (Auth::check())
                                                         {!! Form::open(['method' => 'POST','route' => ['rating', $product->id],'style'=>'display:inline']) !!}
                                                         {{ csrf_field() }}
-                                                        {{--@if(!$userReview)--}}
-                                                        <div class="reviews-bottom">
-                                                            <h4>Agregar Reviews</h4>
-                                                            <p>Tu email nunca será publicado. Solo publicaremos tu
-                                                                nombre de pila. *</p>
-                                                            <p>Tu Rating sobre el producto</p>
-                                                            <div class="acidjs-rating-stars">
-                                                                <input type="radio" name="rating" id="group-1-0"
-                                                                       value="100"/><label for="group-1-0"></label>
-                                                                <input type="radio" name="rating" id="group-1-1"
-                                                                       value="80"/><label for="group-1-1"></label>
-                                                                <input type="radio" name="rating" id="group-1-2"
-                                                                       value="60"/><label for="group-1-2"></label>
-                                                                <input type="radio" name="rating" id="group-1-3"
-                                                                       value="40"/><label for="group-1-3"></label>
-                                                                <input type="radio" name="rating" id="group-1-4"
-                                                                       value="20"/><label for="group-1-4"></label>
+                                                        @if(!$userReview)
+                                                            <div class="reviews-bottom">
+                                                                <h4>Agregar Reviews</h4>
+                                                                <p>Tu email nunca será publicado. Solo publicaremos tu
+                                                                    nombre de pila. *</p>
+                                                                <p>Tu Rating sobre el producto</p>
+                                                                <div class="acidjs-rating-stars">
+                                                                    <input type="radio" name="rating" id="group-1-0"
+                                                                           value="100" required/><label
+                                                                            for="group-1-0"></label>
+                                                                    <input type="radio" name="rating" id="group-1-1"
+                                                                           value="80"/><label for="group-1-1"></label>
+                                                                    <input type="radio" name="rating" id="group-1-2"
+                                                                           value="60"/><label for="group-1-2"></label>
+                                                                    <input type="radio" name="rating" id="group-1-3"
+                                                                           value="40"/><label for="group-1-3"></label>
+                                                                    <input type="radio" name="rating" id="group-1-4"
+                                                                           value="20"/><label for="group-1-4"></label>
+                                                                </div>
+                                                                <br><br>
+                                                                <textarea type="text" Name="review"
+                                                                          placeholder="Mensaje..."
+                                                                          required=""></textarea>
+                                                                <input type="submit" value="Enviar">
+                                                                <br>
                                                             </div>
-                                                            <br><br>
-                                                            <textarea type="text" Name="review"
-                                                                      placeholder="Mensaje..."
-                                                                      required=""></textarea>
-                                                            <input type="submit" value="Enviar">
-                                                            <br>
-                                                        </div>
-                                                        {{--@endif--}}
+                                                        @endif
                                                         {!! Form::Close() !!}
                                                         <br><br>
                                                     @else

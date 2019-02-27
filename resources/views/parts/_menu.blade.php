@@ -2,8 +2,8 @@
     <div class="container">
         <div class="logo-nav">
             <div class="logo-nav-left">
-                <h1><a href="index.html"><img src="{{asset('styleWeb/img/logochico.png') }}" alt="logo"/>Boca
-                        Total <span>Compra donde sea</span></a></h1>
+                <h1><a href="{{ url('/') }}"><img src="{{asset('styleWeb/img/logochico.png') }}" alt="logo"/>BocaAmérica</a>
+                </h1>
             </div>
             <div class="logo-nav-left1">
                 <nav class="navbar navbar-default">
@@ -23,7 +23,7 @@
                             @foreach($categories as $category)
                                 <li><a href="{{ url('categoria', $category->slug) }}">{{ $category->name }}</a></li>
                             @endforeach
-                            <li><a href="mail.html">Contacto</a></li>
+                            <li><a href="{{ url('/mail/contacto') }}">Contacto</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -49,7 +49,7 @@
                                     <span>$ {{ $totalCart }} </span> -
                                 @endif
                             </div>
-                            <img src="{{asset('styleWeb/images/bag.png') }}" alt="carrito"/>
+                            <img src="{{asset('styleWeb/img/icons/bag.png') }}" alt="carrito"/>
                             <span class="badge badge-warning">{{ $countCart }}</span>
                         </h3>
                     </a>

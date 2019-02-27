@@ -10,6 +10,7 @@ namespace productosboca\Http\ServiceProvider;
 
 
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\File;
 use Illuminate\View\View;
 use productosboca\Cart;
 use productosboca\Category;
@@ -18,6 +19,8 @@ class MenuProvider
 {
     public function compose(View $view)
     {
+        $costoEnvio = File::get(storage_path('app/public/envio.txt'));
+
         $categories = Category::where('status', 'ACTIVE')
             ->get();
 
@@ -33,6 +36,7 @@ class MenuProvider
             'categories' => $categories,
             'totalCart' => $totalCart,
             'countCart' => $countCart,
+            'costoEnvio' => $costoEnvio,
         ]);
     }
 }

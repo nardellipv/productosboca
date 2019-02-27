@@ -169,6 +169,7 @@ return [
         'Jenssegers\Date\DateServiceProvider',
         Collective\Html\HtmlServiceProvider::class,
         \productosboca\Providers\ComposerServiceProvider::class,
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -230,6 +231,7 @@ return [
         'Date' => Jenssegers\Date\Date::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
     ],
 
 ];

@@ -51,7 +51,7 @@
                         </h2>
                         <hr/>
                         <a href="{{ url('/') }}" class="btn btn-info" style="width: 100%;">Agregar más productos</a>
-                        <hr/>
+                        <hr>
                         @if($countCart > 0)
                             <div class="shopping_cart">
 
@@ -520,7 +520,7 @@
                                         <div class="panel-body">
                                             <span class='payment-errors'></span>
                                             <fieldset>
-                                                <legend>En cualquier medio de pago no hace falta registración previa.
+                                                <legend>No es necesario tener cuenta en los medios de pagos para utilizarlos.
                                                 </legend>
                                                 <div class="container">
                                                     <div class="row">

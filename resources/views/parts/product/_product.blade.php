@@ -5,6 +5,7 @@
     <script defer src="{{asset('styleWeb/js/jquery.flexslider.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('styleWeb/css/flexslider.css') }}" media="screen"/>
     <script src="{{asset('styleWeb/js/imagezoom.js') }}"></script>
+    @include('external.getsiteControl')
     <script>
         // Can also be used with $(document).ready()
         $(window).load(function () {
@@ -180,12 +181,6 @@
                                                 target="_blank">Consulte
                                             aquí</a></p>
                                 @endif
-                                <div class="social-icon">
-                                    <a href="#"><i class="icon"></i></a>
-                                    <a href="#"><i class="icon1"></i></a>
-                                    <a href="#"><i class="icon2"></i></a>
-                                    <a href="#"><i class="icon3"></i></a>
-                                </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>

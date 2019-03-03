@@ -30,7 +30,15 @@ Route::get('/informacion/politicas_privacidad', 'InformationController@policity'
 //--------------------------
 
 //Profile
-Route::get('/perfil', 'Profile\ProfileController@profile')->name('profile');
-Route::Patch('/perfil/update_data/{id}', 'Profile\ProfileController@updateData')->name('updateData');
-Route::Patch('/perfil/update_password/{id}', 'Profile\ProfileController@updatePassword')->name('updatePassword');
+Route::middleware(['auth','verified'])->group(function () {
+    Route::get('/perfil', 'Profile\ProfileController@profile')->name('profile');
+    Route::Patch('/perfil/update_data/{id}', 'Profile\ProfileController@updateData')->name('updateData');
+    Route::Patch('/perfil/update_password/{id}', 'Profile\ProfileController@updatePassword')->name('updatePassword');
+});
 //--------------------------
+
+//admin
+//Route::middleware(['auth','verified'])->group(function () {
+    Route::get('/admin', 'Admin\DashboardController@index')->name('index');
+    Route::resource('/products', 'Admin\ProductsController');
+//});

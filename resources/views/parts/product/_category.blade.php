@@ -23,19 +23,19 @@
                                                                 <a href="#" class="new-gri" data-toggle="modal"
                                                                    data-target="#myModal1">
                                                                     <div class="grid-img">
-                                                                        <img src="{{ $product->photo }}"
+                                                                        <img src="{{ asset('images/thumbnail/'.$product->photo) }}"
                                                                              class="img-responsive"
                                                                              alt="">
                                                                     </div>
                                                                     <div class="grid-img">
-                                                                        <img src="{{ $product->photo }}" class="img-responsive"
+                                                                        <img src="{{ asset('images/thumbnail/'.$product->photo) }}" class="img-responsive"
                                                                              alt="">
                                                                     </div>
                                                                 </a>
                                                             </figure>
                                                         </div>
                                                         <div class="women">
-                                                            <h6><a href="{{ url('producto', $product->slug) }}">{{ $product->name }}</a></h6>
+                                                            <h6><a href="{{ url('producto', $product->slug) }}">{{ str_limit($product->name,20) }}</a></h6>
                                                             <div class="block star-rating" style="margin-left: 38%;">
                                                                 <div class="back-stars small ghosting">
                                                                     <i class="fa fa-star" aria-hidden="true"></i>

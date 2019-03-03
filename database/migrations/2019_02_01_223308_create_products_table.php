@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->enum('section',['BANNER','NEW','MOSTSELL','OTHER']);
             $table->string('photo');
-            $table->float('rating',3,0);
+            $table->float('rating',3,0)->default(0);
             $table->string('slug');
             $table->date('time_offer')->nullable();
 
@@ -33,9 +33,7 @@ class CreateProductsTable extends Migration
 
             // Relaciones
 
-            $table->foreign('category_id')->references('id')->on('categories')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 

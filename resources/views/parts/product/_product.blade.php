@@ -81,13 +81,12 @@
                                 <div class="flexslider">
                                     <ul class="slides">
                                         @foreach($pictures as $picture)
-                                            <li data-thumb="{{ $picture->url }}">
-                                                <div class="thumb-image"><img src="{{ $picture->url }}"
+                                            <li data-thumb="{{ asset('images/products/'.$picture->url) }}">
+                                                <div class="thumb-image"><img src="{{ asset('images/products/'.$picture->url) }}"
                                                                               data-imagezoom="true"
                                                                               class="img-responsive">
                                                 </div>
                                             </li>
-
                                         @endforeach
                                     </ul>
                                 </div>
@@ -335,10 +334,10 @@
                                         <figure>
                                             <a href="{{ url('producto', $related->slug) }}">
                                                 <div class="grid-img">
-                                                    <img src="{{ $related->photo }}" class="img-responsive" alt="">
+                                                    <img src="{{ asset('images/thumbnail/'.$related->photo) }}" class="img-responsive" alt="">
                                                 </div>
                                                 <div class="grid-img">
-                                                    <img src="{{ $related->photo }}" class="img-responsive" alt="">
+                                                    <img src="{{ asset('images/thumbnail/'.$related->photo) }}" class="img-responsive" alt="">
                                                 </div>
                                             </a>
                                         </figure>

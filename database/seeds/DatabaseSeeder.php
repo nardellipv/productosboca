@@ -13,15 +13,15 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserSeeder::class);
         $this->call(CategoriesSeeder::class);
-        $this->call(ProductsSeeder::class);
+//        $this->call(ProductsSeeder::class);
         $this->call(PaymentsSeeder::class);
         $this->call(CheckoutsSeeder::class);
-        $this->call(PicturesSeeder::class);
+//        $this->call(PicturesSeeder::class);
         $this->call(SizeSeeder::class);
         $this->call(NewsLettersSeeder::class);
-        $this->call(ProductSizeSeeder::class);
-        $this->call(CartSeeder::class);
-        $this->call(ReviewSeeder::class);
+//        $this->call(ProductSizeSeeder::class);
+//        $this->call(CartSeeder::class);
+//        $this->call(ReviewSeeder::class);
         $this->call(DiscountSeeder::class);
     }
 }

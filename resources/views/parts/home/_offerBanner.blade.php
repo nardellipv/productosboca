@@ -1,10 +1,10 @@
-<div class="accessories-w3l">
+<div class="accessories-w3l" style="background: url({{ asset('styleWeb/img/imagenes/banner.jpg') }}) no-repeat 0px 0px;">
     <div class="container">
-        <h3 class="tittle">20% Discount on</h3>
-        <span>TRENDING DESIGNS</span>
+        <h3 class="tittle">Todo lo que queres</h3>
+        <span>en un solo lugar</span>
         <div class="button">
-            <a href="#" class="button1"> Shop Now</a>
-            <a href="#" class="button1"> Quick View</a>
+            {{--<a href="#" class="button1"> Ver listado</a>--}}
+            {{--<a href="#" class="button1"> Quick View</a>--}}
         </div>
     </div>
 </div>

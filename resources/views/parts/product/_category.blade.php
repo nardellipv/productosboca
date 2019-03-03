@@ -23,17 +23,22 @@
                                                                 <a href="#" class="new-gri" data-toggle="modal"
                                                                    data-target="#myModal1">
                                                                     <div class="grid-img">
-                                                                        <img src="{{ asset('images/thumbnail/'.$product->photo) }}"
+                                                                        <img src="{{ asset('images/products/'.$product->photo) }}"
                                                                              class="img-responsive"
                                                                              alt="">
                                                                     </div>
                                                                     <div class="grid-img">
-                                                                        <img src="{{ asset('images/thumbnail/'.$product->photo) }}" class="img-responsive"
+                                                                        <img src="{{ asset('images/products/'.$product->photo) }}" class="img-responsive"
                                                                              alt="">
                                                                     </div>
                                                                 </a>
                                                             </figure>
                                                         </div>
+                                                        @if($product->quantity == 0)
+                                                            <div class="ribben1">
+                                                                <p>Sin Stock</p>
+                                                            </div>
+                                                        @endif
                                                         <div class="women">
                                                             <h6><a href="{{ url('producto', $product->slug) }}">{{ str_limit($product->name,20) }}</a></h6>
                                                             <div class="block star-rating" style="margin-left: 38%;">

@@ -5,7 +5,7 @@
             <div class="recent-grids">
                 <div class="recent-left">
                     <a href="{{ url('producto', $lastItem->slug) }}"><img class="img-responsive "
-                                                                          src="{{ asset('images/thumbnail/'.$lastItem->photo) }}"
+                                                                          src="{{ asset('images/products/'.$lastItem->photo) }}"
                                                                           alt=""></a>
                 </div>
                 <div class="recent-right">

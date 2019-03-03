@@ -111,10 +111,6 @@ class ProductsController extends Controller
             $image = $request->file('photo');
             $input['photo'] = time() . '.' . $image->getClientOriginalExtension();
 
-            /*            $destinationPath = 'images/thumbnail/';
-                        $img = Image::make($image->getRealPath());
-                        $img->resize(250, 250)->save($destinationPath . $input['photo']);*/
-
             $destinationPath = 'images/products';
             $image->move($destinationPath, $input['photo']);
 

@@ -9,15 +9,19 @@
                         <figure>
                             <a href="{{ url('producto', $mostSell->slug) }}">
                                 <div class="grid-img">
-                                    <img src="{{ asset('images/thumbnail/'.$mostSell->photo) }}" class="img-responsive" alt="">
+                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="">
                                 </div>
                                 <div class="grid-img">
-                                    <img src="{{ asset('images/thumbnail/'.$mostSell->photo) }}" class="img-responsive" alt="">
+                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="">
                                 </div>
                             </a>
                         </figure>
                     </div>
-
+                    @if($mostSell->quantity == 0)
+                        <div class="ribben1">
+                            <p>Sin Stock</p>
+                        </div>
+                    @endif
                     <div class="women">
                         <h6><a href="{{ url('producto', $mostSell->slug) }}">{{ $mostSell->name }}</a></h6>
                         <div class="block star-rating" style="margin-left: 38%;">

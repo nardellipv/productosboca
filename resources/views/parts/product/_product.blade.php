@@ -82,9 +82,10 @@
                                     <ul class="slides">
                                         @foreach($pictures as $picture)
                                             <li data-thumb="{{ asset('images/products/'.$picture->url) }}">
-                                                <div class="thumb-image"><img src="{{ asset('images/products/'.$picture->url) }}"
-                                                                              data-imagezoom="true"
-                                                                              class="img-responsive">
+                                                <div class="thumb-image"><img
+                                                            src="{{ asset('images/products/'.$picture->url) }}"
+                                                            data-imagezoom="true"
+                                                            class="img-responsive">
                                                 </div>
                                             </li>
                                         @endforeach
@@ -93,7 +94,6 @@
                             </div>
                             <div class="single-right simpleCart_shelfItem">
                                 <h4>{{ $product->name }}</h4>
-
                                 <div class="block star-rating">
                                     <div class="back-stars small ghosting">
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -151,9 +151,13 @@
                                         @endforeach
                                     </div>
                                     <br><br>
-                                    <button type="submit" class="my-cart-b item_add">Agregar al
-                                        carrito
-                                    </button>
+                                    @if($product->quantity == 0)
+                                        <a href="#" class="button1"> Sin Stock</a>
+                                    @else
+                                        <button type="submit" class="my-cart-b item_add">Agregar al
+                                            carrito
+                                        </button>
+                                    @endif
                                 </div>
                                 {!! Form::close() !!}
                                 <br>
@@ -334,10 +338,12 @@
                                         <figure>
                                             <a href="{{ url('producto', $related->slug) }}">
                                                 <div class="grid-img">
-                                                    <img src="{{ asset('images/thumbnail/'.$related->photo) }}" class="img-responsive" alt="">
+                                                    <img src="{{ asset('images/products/'.$related->photo) }}"
+                                                         class="img-responsive" alt="">
                                                 </div>
                                                 <div class="grid-img">
-                                                    <img src="{{ asset('images/thumbnail/'.$related->photo) }}" class="img-responsive" alt="">
+                                                    <img src="{{ asset('images/products/'.$related->photo) }}"
+                                                         class="img-responsive" alt="">
                                                 </div>
                                             </a>
                                         </figure>

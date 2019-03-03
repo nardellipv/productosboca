@@ -34,7 +34,10 @@ class ProductsController extends Controller
         $product_size = ProductSize::where('product_id', $product->id)
             ->get();
 
-        return view('admin.parts.products._editProduct', compact('product', 'sizes', 'product_size', 'categories'));
+        $pictures = Picture::where('product_id', $product->id)
+            ->get();
+
+        return view('admin.parts.products._editProduct', compact('product', 'sizes', 'product_size', 'categories', 'pictures'));
     }
 
     public function update(Request $request, $id)
@@ -44,7 +47,7 @@ class ProductsController extends Controller
         $product->fill($request->all())->save();
 
         //        guardamos talles
-        if($request->size) {
+        if ($request->size) {
             $sizes = $request['size'];
             foreach ($sizes as $size) {
                 ProductSize::create([
@@ -108,9 +111,9 @@ class ProductsController extends Controller
             $image = $request->file('photo');
             $input['photo'] = time() . '.' . $image->getClientOriginalExtension();
 
-/*            $destinationPath = 'images/thumbnail/';
-            $img = Image::make($image->getRealPath());
-            $img->resize(250, 250)->save($destinationPath . $input['photo']);*/
+            /*            $destinationPath = 'images/thumbnail/';
+                        $img = Image::make($image->getRealPath());
+                        $img->resize(250, 250)->save($destinationPath . $input['photo']);*/
 
             $destinationPath = 'images/products';
             $image->move($destinationPath, $input['photo']);
@@ -129,6 +132,15 @@ class ProductsController extends Controller
     {
         $product = Product::find($id);
         $product->delete();
+
+        return back();
+    }
+
+    public function write(Request $request)
+    {
+        $content = $request->value;
+
+        Storage::put('public/envio.txt', $content);
 
         return back();
     }

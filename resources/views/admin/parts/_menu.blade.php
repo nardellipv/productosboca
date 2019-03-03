@@ -32,8 +32,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Listado de categorías</a></li>
-                    <li><a href="#">Agregar categorías</a></li>
+                    <li><a href="{{ route('categories.index') }}">Listado de categorías</a></li>
                 </ul>
             </li>
         </ul>

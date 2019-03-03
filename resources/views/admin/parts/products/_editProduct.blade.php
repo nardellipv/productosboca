@@ -112,6 +112,35 @@
                             </div>
                         </div>
 
+                        <div class="box box-default collapsed-box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Imagenes</h3>
+
+                                <div class="box-tools pull-right">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                                class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="{{ asset('images/products/'.$product->photo) }}"
+                                             class="img-responsive"
+                                             width="30%">
+                                        <p>Imagen de portada</p>
+                                        @foreach($pictures as $picture)
+                                            <div class="col-sm-6">
+                                            <img src="{{ asset('images/products/'.$picture->url) }}"
+                                                 class="img-responsive" width="30%">
+                                            <p>Imagen de miniatura</p>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="box-footer">
                             <button type="submit" class="btn btn-primary">Agregar Producto</button>
                         </div>
@@ -124,7 +153,6 @@
 @endsection
 
 @section('script')
-    <!-- iCheck 1.0.1 -->
     <script src="{{ asset('styleAdmin/plugins/iCheck/icheck.min.js') }}"></script>
     <script>
         $(function () {

@@ -24,7 +24,7 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view::composer(['parts._menu','parts.cart._cart','parts._header'],'productosboca\Http\ServiceProvider\MenuProvider');
-        view::composer(['parts.product._aside'],'productosboca\Http\ServiceProvider\Aside');
+        view::composer(['parts._menu', 'parts.cart._cart', 'parts._header', 'admin.parts.dashboard._widget'], 'productosboca\Http\ServiceProvider\MenuProvider');
+        view::composer(['parts.product._aside'], 'productosboca\Http\ServiceProvider\Aside');
     }
 }

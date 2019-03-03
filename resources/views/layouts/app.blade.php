@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>{{ config('app.name', 'Boca Total') }}</title>
+    <title>{{ config('app.name', 'Boca América') }}</title>
     <!--css-->
     <link href="{{asset('styleWeb/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all"/>
     <link href="{{asset('styleWeb/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>

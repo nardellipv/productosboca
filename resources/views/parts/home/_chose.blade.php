@@ -14,7 +14,7 @@
                                         </li>
                                         <li>
                                             <h3>Envio gratuito</h3>
-                                            <p>Compra superior a los $2000</p>
+                                            <p>Compra superior a los ${{ $costoEnvio }}</p>
                                         </li>
                                     </ul>
                                 </div>

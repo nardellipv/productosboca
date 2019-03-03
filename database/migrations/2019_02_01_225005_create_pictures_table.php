@@ -17,7 +17,7 @@ class CreatePicturesTable extends Migration
             $table->increments('id');
 
             $table->string('name');
-            $table->string('url');
+            $table->string('url')->nullable();
 
             $table->integer('product_id')->unsigned();
 

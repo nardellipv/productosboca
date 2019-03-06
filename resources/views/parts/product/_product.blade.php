@@ -67,7 +67,31 @@
         }
     </style>
 @endsection
+<script>
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
+    let countDown = new Date("{{ Date::parse($product->time_offer)->format('F j, Y') }}").getTime(),
+        x = setInterval(function () {
+
+            let now = new Date().getTime(),
+                distance = countDown - now;
+
+            document.getElementById('days').innerText = Math.floor(distance / (day)),
+                document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+            //do something later when date is reached
+            //if (distance < 0) {
+            //  clearInterval(x);
+            //  'IT'S MY BIRTHDAY!;
+            //}
+
+        }, second)
+</script>
 @section('content')
     <div class="content">
         <div class="cart-items">
@@ -125,6 +149,18 @@
                                 <div class="description">
                                     <p><span>Descripción : </span> {{ $product->description }}</p>
                                 </div>
+                                <br><br>
+                                @if($product->time_offer)
+                                    <div class="description">
+                                        <h4>La oferta termina en:</h4>
+                                        <ul style="font-size: 2em;">
+                                            <li style="display: inline-block;"><span id="days"></span> Días</li>
+                                            <li style="display: inline-block;"><span id="hours"></span> Hs</li>
+                                            <li style="display: inline-block;"><span id="minutes"></span> Min</li>
+                                            <li style="display: inline-block;"><span id="seconds"></span> Seg</li>
+                                        </ul>
+                                    </div>
+                                @endif
 
                                 {!! Form::open(['method' => 'POST','url' => ['/carrito/agregar', $product->id],'style'=>'display:inline']) !!}
                                 {{ csrf_field() }}

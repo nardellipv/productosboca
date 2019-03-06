@@ -56,7 +56,7 @@
                                     <div class="form-group">
                                         <div class="form-group">
                                             <label>Tiempo de la Oferta</label>
-                                            <input type="date" class="form-control" name="offer_time"
+                                            <input type="date" class="form-control" name="time_offer"
                                                    placeholder="Tiempo Oferta">
                                         </div>
                                     </div>

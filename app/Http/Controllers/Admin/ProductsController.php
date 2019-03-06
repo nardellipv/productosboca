@@ -92,7 +92,6 @@ class ProductsController extends Controller
 
     public function store(Request $request)
     {
-
 //        guardamos producto
         $product = new Product();
         $product->slug = str_slug($request['name']);

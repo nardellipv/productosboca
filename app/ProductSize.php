@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca;
+namespace bocaamerica;
 
 use Illuminate\Database\Eloquent\Model;
 

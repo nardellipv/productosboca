@@ -1,9 +1,9 @@
 <?php
 
-namespace productosboca\Http\ServiceProvider;
+namespace bocaamerica\Http\ServiceProvider;
 
 
-use productosboca\Product;
+use bocaamerica\Product;
 use Illuminate\View\View;
 
 class aside

@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca\Exceptions;
+namespace bocaamerica\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

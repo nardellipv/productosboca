@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca\Providers;
+namespace bocaamerica\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'productosboca\Model' => 'productosboca\Policies\ModelPolicy',
+        'bocaamerica\Model' => 'bocaamerica\Policies\ModelPolicy',
     ];
 
     /**

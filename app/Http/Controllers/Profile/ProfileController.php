@@ -1,14 +1,14 @@
 <?php
 
-namespace productosboca\Http\Controllers\Profile;
+namespace bocaamerica\Http\Controllers\Profile;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-use productosboca\Cart;
-use productosboca\Http\Controllers\Controller;
-use productosboca\Http\Requests\DataClientProfileRequest;
-use productosboca\User;
+use bocaamerica\Cart;
+use bocaamerica\Http\Controllers\Controller;
+use bocaamerica\Http\Requests\DataClientProfileRequest;
+use bocaamerica\User;
 
 class ProfileController extends Controller
 {

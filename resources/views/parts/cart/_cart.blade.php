@@ -110,7 +110,7 @@
                                                         </div>
                                                         <br><br>
                                                         <div style="text-align: center;">
-                                                            <h4>Cupón</h4>
+                                                            <h4>¿Tiene un cupón?</h4>
                                                             {!! Form::open(['method' => 'POST','route' => ['coupon'],'style'=>'display:inline']) !!}
                                                             {{ csrf_field() }}
                                                             <div class="input-group" style="margin: 10px -6px 0px 7px;">

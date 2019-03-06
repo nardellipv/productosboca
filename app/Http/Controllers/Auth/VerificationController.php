@@ -1,8 +1,8 @@
 <?php
 
-namespace productosboca\Http\Controllers\Auth;
+namespace bocaamerica\Http\Controllers\Auth;
 
-use productosboca\Http\Controllers\Controller;
+use bocaamerica\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\VerifiesEmails;
 
 class VerificationController extends Controller

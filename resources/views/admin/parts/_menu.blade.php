@@ -35,6 +35,7 @@
                     <li><a href="{{ route('categories.index') }}">Listado de categorías</a></li>
                 </ul>
             </li>
+            <li class="active"><a href="{{ url('/coupon') }}"><i class="fa fa-dollar"></i> <span>Cupón Descuento</span></a></li>
         </ul>
     </section>
 </aside>

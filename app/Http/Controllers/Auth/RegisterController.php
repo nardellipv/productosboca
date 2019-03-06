@@ -1,9 +1,9 @@
 <?php
 
-namespace productosboca\Http\Controllers\Auth;
+namespace bocaamerica\Http\Controllers\Auth;
 
-use productosboca\User;
-use productosboca\Http\Controllers\Controller;
+use bocaamerica\User;
+use bocaamerica\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -65,7 +65,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \productosboca\User
+     * @return \bocaamerica\User
      */
     protected function create(array $data)
     {

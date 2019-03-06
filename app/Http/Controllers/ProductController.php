@@ -1,17 +1,17 @@
 <?php
 
-namespace productosboca\Http\Controllers;
+namespace bocaamerica\Http\Controllers;
 
 use Andreani\Andreani;
 use Andreani\Requests\CotizarEnvio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-use productosboca\Http\Requests\ReviewRequest;
-use productosboca\Picture;
-use productosboca\Product;
-use productosboca\ProductSize;
-use productosboca\Review;
+use bocaamerica\Http\Requests\ReviewRequest;
+use bocaamerica\Picture;
+use bocaamerica\Product;
+use bocaamerica\ProductSize;
+use bocaamerica\Review;
 
 class ProductController extends Controller
 {
@@ -75,7 +75,7 @@ class ProductController extends Controller
         $request->setCodigoDeCliente('CL0003750');
         $request->setNumeroDeContrato('400006709');
         $request->setCodigoPostal($envio);
-        $request->setPeso(1000);
+        $request->setPeso(2000);
         $request->setVolumen(100);
         $request->setValorDeclarado(100);
 

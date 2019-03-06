@@ -6,14 +6,14 @@
  * Time: 16:01
  */
 
-namespace productosboca\Http\ServiceProvider;
+namespace bocaamerica\Http\ServiceProvider;
 
 
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\File;
 use Illuminate\View\View;
-use productosboca\Cart;
-use productosboca\Category;
+use bocaamerica\Cart;
+use bocaamerica\Category;
 
 class MenuProvider
 {

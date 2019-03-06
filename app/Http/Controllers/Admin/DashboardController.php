@@ -1,12 +1,12 @@
 <?php
 
-namespace productosboca\Http\Controllers\Admin;
+namespace bocaamerica\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
-use productosboca\Category;
-use productosboca\Http\Controllers\Controller;
-use productosboca\Product;
-use productosboca\User;
+use bocaamerica\Checkout;
+use bocaamerica\Category;
+use bocaamerica\Http\Controllers\Controller;
+use bocaamerica\Product;
+use bocaamerica\User;
 
 class DashboardController extends Controller
 {
@@ -15,12 +15,14 @@ class DashboardController extends Controller
         $products = Product::with(['category'])
             ->get();
 
+        $buys = Checkout::all();
+
         $users = User::all();
 
         $countUsers = User::count();
         $countProduct = Product::count();
         $countCategory = Category::count();
 
-        return view('admin.parts._admin', compact('users', 'products','countCategory','countProduct','countUsers'));
+        return view('admin.parts._admin', compact('users', 'products','countCategory','countProduct','countUsers','buys'));
     }
 }

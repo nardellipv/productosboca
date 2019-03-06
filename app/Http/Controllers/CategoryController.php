@@ -1,9 +1,9 @@
 <?php
 
-namespace productosboca\Http\Controllers;
+namespace bocaamerica\Http\Controllers;
 
-use productosboca\Category;
-use productosboca\Product;
+use bocaamerica\Category;
+use bocaamerica\Product;
 
 class CategoryController extends Controller
 {

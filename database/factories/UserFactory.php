@@ -3,7 +3,7 @@
 use Faker\Generator as Faker;
 
 
-$factory->define(productosboca\User::class, function (Faker $faker) {
+$factory->define(bocaamerica\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'lastname' => $faker->lastName,

@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => productosboca\User::class,
+            'model' => bocaamerica\User::class,
         ],
 
         // 'users' => [

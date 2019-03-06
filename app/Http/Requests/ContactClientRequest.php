@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca\Http\Requests;
+namespace bocaamerica\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

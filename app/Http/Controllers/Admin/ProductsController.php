@@ -1,17 +1,17 @@
 <?php
 
-namespace productosboca\Http\Controllers\Admin;
+namespace bocaamerica\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
-use productosboca\Category;
-use productosboca\Http\Controllers\Controller;
-use productosboca\Picture;
-use productosboca\Product;
+use bocaamerica\Category;
+use bocaamerica\Http\Controllers\Controller;
+use bocaamerica\Picture;
+use bocaamerica\Product;
 use Image;
-use productosboca\ProductSize;
-use productosboca\Size;
+use bocaamerica\ProductSize;
+use bocaamerica\Size;
 
 class ProductsController extends Controller
 {

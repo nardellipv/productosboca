@@ -1,10 +1,10 @@
 <?php
 
-namespace productosboca\Http\Controllers;
+namespace bocaamerica\Http\Controllers;
 
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
-use productosboca\Http\Requests\ContactClientRequest;
+use bocaamerica\Http\Requests\ContactClientRequest;
 
 class ContactController extends Controller
 {

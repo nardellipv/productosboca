@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca;
+namespace bocaamerica;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;

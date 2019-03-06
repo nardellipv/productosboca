@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(productosboca\Picture::class, function (Faker $faker) {
+$factory->define(bocaamerica\Picture::class, function (Faker $faker) {
     return [
         'name' => $faker->paragraph(1),
         'url' => $faker->imageUrl($width = 640, $height = 480),

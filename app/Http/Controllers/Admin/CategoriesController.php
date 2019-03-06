@@ -1,11 +1,11 @@
 <?php
 
-namespace productosboca\Http\Controllers\Admin;
+namespace bocaamerica\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use productosboca\Category;
-use productosboca\Http\Controllers\Controller;
+use bocaamerica\Category;
+use bocaamerica\Http\Controllers\Controller;
 
 class CategoriesController extends Controller
 {

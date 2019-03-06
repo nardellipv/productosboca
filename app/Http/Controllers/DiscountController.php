@@ -1,11 +1,11 @@
 <?php
 
-namespace productosboca\Http\Controllers;
+namespace bocaamerica\Http\Controllers;
 
 use Illuminate\Support\Facades\Cookie;
-use productosboca\Cart;
-use productosboca\Discount;
-use productosboca\Http\Requests\DiscountRequest;
+use bocaamerica\Cart;
+use bocaamerica\Discount;
+use bocaamerica\Http\Requests\DiscountRequest;
 
 class DiscountController extends Controller
 {

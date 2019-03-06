@@ -31,7 +31,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => productosboca\User::class,
+        'model' => bocaamerica\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
         'webhook' => [

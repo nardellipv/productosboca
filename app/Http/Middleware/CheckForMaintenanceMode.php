@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca\Http\Middleware;
+namespace bocaamerica\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode as Middleware;
 

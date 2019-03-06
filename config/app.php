@@ -168,16 +168,16 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         'Jenssegers\Date\DateServiceProvider',
         Collective\Html\HtmlServiceProvider::class,
-        \productosboca\Providers\ComposerServiceProvider::class,
+        \bocaamerica\Providers\ComposerServiceProvider::class,
         Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
         /*
          * Application Service Providers...
          */
-        productosboca\Providers\AppServiceProvider::class,
-        productosboca\Providers\AuthServiceProvider::class,
-        // productosboca\Providers\BroadcastServiceProvider::class,
-        productosboca\Providers\EventServiceProvider::class,
-        productosboca\Providers\RouteServiceProvider::class,
+        bocaamerica\Providers\AppServiceProvider::class,
+        bocaamerica\Providers\AuthServiceProvider::class,
+        // bocaamerica\Providers\BroadcastServiceProvider::class,
+        bocaamerica\Providers\EventServiceProvider::class,
+        bocaamerica\Providers\RouteServiceProvider::class,
 
     ],
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca\Http\Controllers;
+namespace bocaamerica\Http\Controllers;
 
 use Illuminate\Http\Request;
 

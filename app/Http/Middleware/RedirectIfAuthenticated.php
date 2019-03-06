@@ -1,6 +1,6 @@
 <?php
 
-namespace productosboca\Http\Middleware;
+namespace bocaamerica\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

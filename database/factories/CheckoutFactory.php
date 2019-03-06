@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(productosboca\Checkout::class, function (Faker $faker) {
+$factory->define(bocaamerica\Checkout::class, function (Faker $faker) {
     return [
         'email' => $faker->email,
         'name' => $faker->name,

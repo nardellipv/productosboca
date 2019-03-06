@@ -1,9 +1,9 @@
 <?php
 
-namespace productosboca\Http\Controllers;
+namespace bocaamerica\Http\Controllers;
 
-use productosboca\Product;
-use productosboca\ProductSize;
+use bocaamerica\Product;
+use bocaamerica\ProductSize;
 
 class HomeController extends Controller
 {

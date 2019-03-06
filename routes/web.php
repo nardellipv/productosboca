@@ -45,4 +45,8 @@ Route::get('/admin', 'Admin\DashboardController@index')->name('index');
     Route::resource('/categories', 'Admin\CategoriesController')->only(['index','store','destroy','create','edit']);
         Route::get('/categories/active/{id}', 'Admin\CategoriesController@active')->name('active');
         Route::get('/categories/desactive/{id}', 'Admin\CategoriesController@desactive')->name('desactive');
+    Route::resource('/coupon', 'Admin\CouponController');
+        Route::get('/coupon/active/{id}', 'Admin\CouponController@active')->name('cuopon.active');
+        Route::get('/coupon/desactive/{id}', 'Admin\CouponController@desactive')->name('cuopon.desactive');
+
 //});

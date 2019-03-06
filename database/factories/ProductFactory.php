@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(productosboca\Product::class, function (Faker $faker) {
+$factory->define(bocaamerica\Product::class, function (Faker $faker) {
     $name = $faker->sentence(2);
     return [
         'name' => $name,

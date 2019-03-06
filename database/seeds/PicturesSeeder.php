@@ -11,6 +11,6 @@ class PicturesSeeder extends Seeder
      */
     public function run()
     {
-        factory(\productosboca\Picture::class, 100)->create();
+        factory(\bocaamerica\Picture::class, 100)->create();
     }
 }

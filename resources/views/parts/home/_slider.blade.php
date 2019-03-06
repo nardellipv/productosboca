@@ -1,11 +1,11 @@
-<div class="banner-w3">
+<div class="banner-w3" style="background-color: yellow">
     <div class="demo-1">
         <div id="example1" class="core-slider core-slider__carousel example_1">
             <div class="core-slider_viewport">
                 <div class="core-slider_list">
                     {{--@foreach($productsBanner as $productBanner)--}}
                     <div class="core-slider_item">
-                        <img src="{{ asset('styleWeb/img/imagenes/slip.jpg')  }}" class="img-responsive" alt="">
+                        <img src="{{ asset('styleWeb/img/imagenes/slip.jpg')  }}" class="img-responsive center-block" alt="boca america">
                     </div>
                     {{--@endforeach--}}
                 </div>

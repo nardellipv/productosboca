@@ -11,6 +11,6 @@ class PaymentsSeeder extends Seeder
      */
     public function run()
     {
-        factory(\productosboca\Payment::class, 4)->create();
+        factory(\bocaamerica\Payment::class, 4)->create();
     }
 }

@@ -15,5 +15,6 @@ $factory->define(bocaamerica\Checkout::class, function (Faker $faker) {
         'note' => $faker->text(100),
         'status' =>$faker->randomElement(['EN PROCESO','COMPRA','ENVIADO','CANCELADO']),
         'payment' => $faker->creditCardType,
+        'serial_buy'=>$faker->md5,
     ];
 });

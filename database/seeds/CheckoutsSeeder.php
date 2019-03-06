@@ -11,6 +11,6 @@ class CheckoutsSeeder extends Seeder
      */
     public function run()
     {
-        factory(\productosboca\Checkout::class, 40)->create();
+        factory(\bocaamerica\Checkout::class, 40)->create();
     }
 }

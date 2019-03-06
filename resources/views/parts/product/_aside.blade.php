@@ -14,7 +14,7 @@
                         <del>${{ $lastItem->price }}</del>
                         <h4 class="item_price" style="display: inline;">${{ $lastItem->offer }}</h4>
                     @else
-                        <p><em class="item_price" style="display: inline;">${{ $lastItem->offer }}</em>
+                        <p><em class="item_price" style="display: inline;">${{ $lastItem->price }}</em>
                     @endif
                     <div class="block star-rating" style="display: table-row;">
                         <div class="back-stars small ghosting">

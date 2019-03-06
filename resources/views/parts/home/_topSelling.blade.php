@@ -49,7 +49,7 @@
                             </h5>
                             <h4 class="item_price">${{ $mostSell->offer }}</h4>
                         @else
-                            <p><em class="item_price">${{ $mostSell->offer }}</em></p>
+                            <p><em class="item_price">${{ $mostSell->price }}</em></p>
                         @endif
                         <br>
                         <a href="{{ url('producto', $mostSell->slug) }}" class="my-cart-b item_add">Ver Más</a>

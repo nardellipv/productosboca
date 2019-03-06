@@ -27,6 +27,7 @@ class CreateCheckoutsTable extends Migration
             $table->text('note')->nullable();
             $table->enum('status',['EN PROCESO','COMPRA','ENVIADO','CANCELADO'])->default('EN PROCESO');
             $table->string('payment');
+            $table->string('serial_buy');
 
             $table->timestamps();
         });

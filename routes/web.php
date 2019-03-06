@@ -27,6 +27,8 @@ Route::get('/informacion/formas_pagos', 'InformationController@payments')->name(
 Route::get('/informacion/comprar', 'InformationController@buy')->name('buy');
 Route::get('/informacion/terminos_condiciones', 'InformationController@termns')->name('termns');
 Route::get('/informacion/politicas_privacidad', 'InformationController@policity')->name('policity');
+
+Route::post('/compra_cliente', 'EmailController@compraCliente')->name('compraCliente');
 //--------------------------
 
 //Profile
@@ -38,7 +40,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 //--------------------------
 
 //admin
-//Route::middleware(['auth','verified'])->group(function () {
+Route::middleware(['auth','verified','AdminRedirect'])->group(function () {
 Route::get('/admin', 'Admin\DashboardController@index')->name('index');
     Route::resource('/products', 'Admin\ProductsController');
         Route::post('/free_shipping','Admin\ProductsController@write')->name('write');
@@ -48,5 +50,4 @@ Route::get('/admin', 'Admin\DashboardController@index')->name('index');
     Route::resource('/coupon', 'Admin\CouponController');
         Route::get('/coupon/active/{id}', 'Admin\CouponController@active')->name('cuopon.active');
         Route::get('/coupon/desactive/{id}', 'Admin\CouponController@desactive')->name('cuopon.desactive');
-
-//});
+});

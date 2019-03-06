@@ -3,8 +3,8 @@
 <head>
     <title>{{ config('app.name', 'Boca América') }}</title>
     <!--css-->
-    <link href="{{asset('styleWeb/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all"/>
-    <link href="{{asset('styleWeb/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{asset('styleWeb/css/bootstrap.css') }}" rel="stylesheet" media="all"/>
+    <link href="{{asset('styleWeb/css/style.css') }}" rel="stylesheet" media="all"/>
     <link href="{{asset('styleWeb/css/font-awesome.css') }}" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
@@ -25,8 +25,8 @@
     <!--css-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="New Shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <meta name="keywords" content="Tienda exclusiva de productos de Boca Juniors. Envios a todo el país y excelentes descuentos.
+                    Venta de remeras, pantalones, merchandising, camisetas y mucho más"/>
     <script type="application/x-javascript"> addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
         }, false);
@@ -64,7 +64,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- cart -->
     <!--start-rate-->
     <script src="{{asset('styleWeb/js/jstarbox.js') }}"></script>
-    <link rel="stylesheet" href="{{asset('styleWeb/css/jstarbox.css') }}" type="text/css" media="screen"
+    <link rel="stylesheet" href="{{asset('styleWeb/css/jstarbox.css') }}" media="screen"
           charset="utf-8"/>
     <script type="text/javascript">
         jQuery(function () {

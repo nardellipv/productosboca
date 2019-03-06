@@ -7,7 +7,7 @@
                 <img src="{{ asset('styleWeb/img/logochico.png') }}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
+                <p>{{ Auth::user()->name}}</p>
             </div>
         </div>
 

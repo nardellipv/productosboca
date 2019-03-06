@@ -1,45 +1,9 @@
 @extends('layouts.app')
+
 @section('script')
-    <style>
-        .paymentWrap {
-            padding: 50px;
-        }
-
-        .paymentWrap .paymentBtnGroup {
-            max-width: 50%;
-            margin: inherit;
-        }
-
-        .paymentWrap .paymentBtnGroup .paymentMethod {
-            padding: 40px;
-            box-shadow: none;
-            position: relative;
-        }
-
-        .paymentWrap .paymentBtnGroup .paymentMethod.active {
-            outline: none !important;
-        }
-
-        .paymentWrap .paymentBtnGroup .paymentMethod.active .method {
-            border-color: #4cd264;
-            outline: none !important;
-            box-shadow: 0px 3px 22px 0px #7b7b7b;
-        }
-
-        .paymentWrap .paymentBtnGroup .paymentMethod .method {
-            position: absolute;
-            right: 3px;
-            top: 3px;
-            bottom: 3px;
-            left: 3px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            border: 2px solid transparent;
-            transition: all 0.5s;
-        }
-    </style>
+    <link href="{{asset('styleWeb/css/carrito.css') }}" rel="stylesheet" type="text/css" media="all"/>
 @endsection
+
 @section('content')
     <div class='container'>
         <div class='row' style='padding-top:25px; padding-bottom:25px;'>
@@ -107,6 +71,11 @@
                                                                 </h3>
                                                                 <p>${{ $subTotal }}</p>
                                                             @endif
+                                                            <br>
+                                                            <h5>
+                                                                Número de orden
+                                                                <b>{{ $serial_buy }}</b>
+                                                            </h5>
                                                         </div>
                                                         <br><br>
                                                         <div style="text-align: center;">
@@ -317,8 +286,8 @@
                                                             @else
                                                                 <input name="price" value="{{ $subTotal  }}" hidden>
                                                             @endif
-                                                            <input name="productName"
-                                                                   value="{{ $productCart->product->name }}" hidden>
+                                                            <input name="productName" value="{{ $productCart->product->name }}" hidden>
+                                                            <input name="serial_buy" value="{{ $serial_buy }}" hidden>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -487,6 +456,7 @@
                                                             @endif
                                                             <input name="productName"
                                                                    value="{{ $productCart->product->name }}" hidden>
+                                                            <input name="serial_buy" value="{{ $serial_buy }}" hidden>
                                                         </td>
                                                     </tr>
                                                 </table>

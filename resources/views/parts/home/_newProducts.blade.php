@@ -50,7 +50,7 @@
                                 </h5>
                                 <h4 class="item_price">${{ $newProduct->offer }}</h4>
                             @else
-                                <p><em class="item_price">${{ $newProduct->offer }}</em></p>
+                                <p><em class="item_price">${{ $newProduct->price }}</em></p>
                             @endif
                             <br>
                             <a href="{{ url('producto', $newProduct->slug) }}" class="my-cart-b item_add">Ver

@@ -2,6 +2,8 @@
 
 namespace bocaamerica;
 
+use bocaamerica\Notifications\MailResetPasswordNotification;
+use bocaamerica\Notifications\VerifyNotification;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -31,5 +33,15 @@ class User extends Authenticatable implements MustVerifyEmail
     public function Product()
     {
         return $this->belongsTo(Product::class);
+    }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new MailResetPasswordNotification($token));
+    }
+
+    public function sendEmailVerificationNotification()
+    {
+        $this->notify(new VerifyNotification());
     }
 }

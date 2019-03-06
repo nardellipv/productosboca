@@ -143,7 +143,7 @@
                                     </h3>
                                     <p class="price item_price">${{ $product->offer }}</p>
                                 @else
-                                    <p class="price item_price">${{ $product->offer }}</p>
+                                    <p class="price item_price">${{ $product->price }}</p>
                                 @endif
 
                                 <div class="description">
@@ -412,7 +412,7 @@
                                             </h5>
                                             <h4 class="item_price">${{ $product->offer }}</h4>
                                         @else
-                                            <p><em class="item_price">${{ $product->offer }}</em></p>
+                                            <p><em class="item_price">${{ $product->price }}</em></p>
                                         @endif
                                         <br>
                                         <a href="{{ url('producto', $product->slug) }}" class="my-cart-b item_add">Ver

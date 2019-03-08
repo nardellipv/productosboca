@@ -198,7 +198,8 @@
                                 {!! Form::close() !!}
                                 <br>
 
-                                {!! Form::open(['method' => 'POST','route' => ['calcular', $product->slug],'style'=>'display:inline']) !!}
+                                <h5>Envío estimado a todo el país $350</h5>
+                                {{--{!! Form::open(['method' => 'POST','route' => ['calcular', $product->slug],'style'=>'display:inline']) !!}
                                 {{ csrf_field() }}
                                 <div class="color-quality">
                                     <h6>Calcular Envio :</h6>
@@ -210,7 +211,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                {!! Form::Close() !!}
+                                {!! Form::Close() !!}--}}
 
                                 @if($tarifa > 0)
                                     <p class="well">El costo de envio es de aprox.: $ {{ $tarifa }}</p>

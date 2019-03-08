@@ -10,7 +10,8 @@ class aside
 {
     public function compose(View $view)
     {
-        $lastItems = Product::orderBy('created_at', 'DESC')
+        $lastItems = Product::where('section', 'MOSTSELL')
+            ->orderBy('created_at', 'DESC')
             ->take(4)
             ->get();
 

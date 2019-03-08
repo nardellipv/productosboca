@@ -33,6 +33,6 @@ class DiscountController extends Controller
             $subTotal = $compraSum - $resto;
         }
 
-        return view('parts.cart._cart', compact('subTotal','productCarts'));
+        return view('parts.cart._cart', compact('subTotal','productCarts','serial_buy'));
     }
 }

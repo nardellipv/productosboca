@@ -88,6 +88,8 @@
         });
     </script>
     <!--//End-rate-->
+    @include('external.analitycs')
+    @include('external.pixelFace')
 </head>
 <body>
 <!--header-->

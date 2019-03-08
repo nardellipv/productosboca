@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c81818c2-087f-46d4-ba4f-4b9177918b7a" name="bocaamerica" url="http://ftp.bocaamerica.com">
+        <fileTransfer host="ftp.bocaamerica.com" port="21" rootFolder="/bocaamerica">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

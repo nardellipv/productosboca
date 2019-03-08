@@ -32,7 +32,7 @@ Route::post('/compra_cliente', 'EmailController@compraCliente')->name('compraCli
 //--------------------------
 
 //Profile
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth','verified'])->group(function () {
     Route::get('/perfil', 'Profile\ProfileController@profile')->name('profile');
     Route::Patch('/perfil/update_data/{id}', 'Profile\ProfileController@updateData')->name('updateData');
     Route::Patch('/perfil/update_password/{id}', 'Profile\ProfileController@updatePassword')->name('updatePassword');

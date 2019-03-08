@@ -25,7 +25,7 @@
                             </div>
                         @endif
                         <div class="women">
-                            <h6><a href="{{ url('producto', $newProduct->slug) }}">{{ $newProduct->name }}</a></h6>
+                            <h6><a href="{{ url('producto', $newProduct->slug) }}">{{ str_limit($newProduct->name, 50) }}</a></h6>
                             <div class="block star-rating" style="margin-left: 38%;">
                                 <div class="back-stars small ghosting">
                                     <i class="fa fa-star" aria-hidden="true"></i>

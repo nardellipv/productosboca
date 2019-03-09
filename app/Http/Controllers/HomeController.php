@@ -42,4 +42,14 @@ class HomeController extends Controller
     {
         return view('parts.cart._thanks');
     }
+
+    public function pendiente()
+    {
+        return view('parts.cart._error');
+    }
+
+    public function error()
+    {
+        return view('parts.cart._pending');
+    }
 }

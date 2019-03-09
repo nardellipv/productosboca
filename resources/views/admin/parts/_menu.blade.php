@@ -14,6 +14,7 @@
         <ul class="sidebar-menu">
             <li class="header">Menú</li>
             <li class="active"><a href="{{ url('/admin') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+            <li class="active"><a href="{{ url('/buys') }}"><i class="fa fa-dashboard"></i> <span>Listados Compras</span></a></li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-industry"></i> <span>Productos</span>
                     <span class="pull-right-container">

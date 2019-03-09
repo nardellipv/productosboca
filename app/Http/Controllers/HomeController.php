@@ -2,6 +2,8 @@
 
 namespace bocaamerica\Http\Controllers;
 
+use bocaamerica\Http\Requests\NewsLetterRequest;
+use bocaamerica\NewsLetter;
 use bocaamerica\Product;
 use bocaamerica\ProductSize;
 
@@ -26,6 +28,14 @@ class HomeController extends Controller
             ->get();
 
         return view('home', compact('productsBanner', 'newProducts', 'mostSells'));
+    }
+
+    public function newsLetter(NewsLetterRequest $request)
+    {
+        $news_letter = new NewsLetter();
+        $news_letter->fill($request->all())->save();
+
+        return view('parts.home._thanksNewsLetter');
     }
 
     public function thanks()

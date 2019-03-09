@@ -29,6 +29,8 @@ Route::get('/informacion/terminos_condiciones', 'InformationController@termns')-
 Route::get('/informacion/politicas_privacidad', 'InformationController@policity')->name('policity');
 
 Route::post('/compra_cliente', 'EmailController@compraCliente')->name('compraCliente');
+
+Route::post('/news_letter', 'HomeController@newsLetter')->name('newsLetter');
 //--------------------------
 
 //Profile

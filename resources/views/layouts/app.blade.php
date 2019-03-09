@@ -90,6 +90,7 @@
     <!--//End-rate-->
     @include('external.analitycs')
     @include('external.pixelFace')
+    @include('external._chat')
 </head>
 <body>
 <!--header-->
@@ -101,6 +102,5 @@
 @yield('content')
 
 @include('parts._footer')
-
 </body>
 </html>

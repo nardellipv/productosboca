@@ -18,10 +18,12 @@
                 <b>Nota: </b> {{ $buy->note }} <br>
                 <b>Pago: </b> {{ $buy->payment }} <br>
                 <b>Número compra: </b> {{ $buy->serial_buy }} <br>
-                <b>Cantidad: </b> {{ $buy->quantity }} <br>
+                <b>Cantidad: </b> {{ $buy->cQuantity }} <br>
                 <b>Total: </b> ${{ $buy->total }} <br>
-                <b>Producto_id: </b> {{ $buy->product_id }} <br>
-                <b>Fecha Compra: </b> {{ $buy->created_at }}
+                <b>Producto Nombre: </b> {{ $buy->productName }} <br>
+                <b>Size: </b> {{ $buy->caSize }} <br>
+                <b>Producto Id: </b> {{ $buy->productId }} <br>
+                <b>Fecha Compra: </b> {{ Date::parse($buy->created_at)->format('j/m/Y H:m') }}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

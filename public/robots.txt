@@ -1,2 +1,11 @@
-User-agent: *
-Disallow:
+User-Agent: *
+Disallow: /informacion/formas_pagos
+Disallow: /informacion/envios
+Disallow: /informacion/terminos_condiciones
+Disallow: /informacion/politicas_privacidad
+Disallow: /login
+Disallow: /register
+Disallow: /carrito
+Disallow: /mail/contacto
+Disallow: /perfil
+Disallow: /admin

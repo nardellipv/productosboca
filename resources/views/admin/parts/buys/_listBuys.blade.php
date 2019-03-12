@@ -30,7 +30,7 @@
                     <tr>
                         <td>
                             <button type="button" class="btn btn-link" data-toggle="modal"
-                                    data-target="#compra-{{ $buy->id }}">{{ $buy->name }} {{ $buy->lastname }}</button>
+                                    data-target="#compra-{{ $buy->id }}">{{ $buy->chName }} {{ $buy->lastname }}</button>
                         </td>
                         <td>{{ $buy->email }}</td>
                         <td>{{ $buy->address }}</td>

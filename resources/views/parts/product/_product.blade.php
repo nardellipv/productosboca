@@ -180,8 +180,8 @@
                                         @foreach($sizes as $size)
                                             <label class="btn btn-link">
                                                 <label>{{ $size->size->size }}</label>
-                                                <input type="radio" name="size" id="option2"
-                                                       value="{{ $size->size->size }}" autocomplete="off" required>
+                                                <input type="radio" name="size"
+                                                       value="{{ $size->size->size }}" required />
                                                 <span class="glyphicon glyphicon-ok"></span>
                                             </label>
                                         @endforeach
@@ -386,7 +386,7 @@
                                         </figure>
                                     </div>
                                     <div class="women">
-                                        <h6><a href="{{ url('producto', $related->slug) }}">{{ $related->name }}</a>
+                                        <h6><a href="{{ url('producto', $related->slug) }}">{{ str_limit($related->name, 20) }}</a>
                                         </h6>
 
                                         <div class="block star-rating" style="margin-left: 38%;">

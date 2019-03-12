@@ -22,6 +22,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('styleWeb/favicon/favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('styleWeb/favicon/favicon-16x16.png') }}">
 
+    <meta property="og:url" content="https://bocaamerica.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Productos de Boca Juniors, todos en un solo lugar."/>
+    <meta property="og:description" content="Encontra productos de Boca Juniors en un solo lugar y al mejor precio."/>
+    <meta property="og:image" content="https://bocaamerica.com/styleWeb/img/logochico.png"/>
+
     <!--css-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -97,6 +103,12 @@
 <div class="header">
     @include('parts._header')
     @include('parts._menu')
+    <br>
+    @if($countCart > 0)
+        @if (Request::path() != 'carrito')
+        <a href="{{ url('carrito') }}" class="btn btn-primary col-sm-offset-5 col-sm-2 text-center">ir al carrito</a>
+            @endif
+    @endif
 </div>
 
 @yield('content')

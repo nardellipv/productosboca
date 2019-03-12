@@ -5,7 +5,32 @@
     <script defer src="{{asset('styleWeb/js/jquery.flexslider.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('styleWeb/css/flexslider.css') }}" media="screen"/>
     <script src="{{asset('styleWeb/js/imagezoom.js') }}"></script>
-    @include('external.getsiteControl')
+
+    <script>
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let countDown = new Date("{{ Date::parse($product->time_offer)->format('F j, Y') }}").getTime(),
+            x = setInterval(function () {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById('days').innerText = Math.floor(distance / (day)),
+                    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                //if (distance < 0) {
+                //  clearInterval(x);
+                //  'IT'S MY BIRTHDAY!;
+                //}
+
+            }, second)
+    </script>
     <script>
         // Can also be used with $(document).ready()
         $(window).load(function () {
@@ -67,31 +92,7 @@
         }
     </style>
 @endsection
-<script>
-    const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
 
-    let countDown = new Date("{{ Date::parse($product->time_offer)->format('F j, Y') }}").getTime(),
-        x = setInterval(function () {
-
-            let now = new Date().getTime(),
-                distance = countDown - now;
-
-            document.getElementById('days').innerText = Math.floor(distance / (day)),
-                document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-            //do something later when date is reached
-            //if (distance < 0) {
-            //  clearInterval(x);
-            //  'IT'S MY BIRTHDAY!;
-            //}
-
-        }, second)
-</script>
 @section('content')
     <div class="content">
         <div class="cart-items">

@@ -114,5 +114,7 @@
 @yield('content')
 
 @include('parts._footer')
+
+@include('external.getsiteControl')
 </body>
 </html>

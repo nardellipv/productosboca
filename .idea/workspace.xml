@@ -2,734 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264b6d28-ad2c-43fb-a98b-a61a39193336" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/parts/dashboard/_listNewsLetter.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/img/icons/circle.png" afterPath="$PROJECT_DIR$/public/styleWeb/img/icons/circle.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BuysController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BuysController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/bootstrap/js/npm.js" afterPath="$PROJECT_DIR$/public/styleAdmin/bootstrap/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/build/less/.csslintrc" afterPath="$PROJECT_DIR$/public/styleAdmin/build/less/.csslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/AdminLTE.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/AdminLTE.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/AdminLTE.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/AdminLTE.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-bootstrap-social.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-bootstrap-social.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-fullcalendar.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-fullcalendar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-select2.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-select2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-without-plugins.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-without-plugins.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-without-plugins.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/alt/AdminLTE-without-plugins.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/_all-skins.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/_all-skins.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-black-light.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-black-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-black.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-black.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-blue-light.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-blue-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-blue.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-green-light.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-green-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-green.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-purple-light.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-purple-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-purple.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-red-light.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-red-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-red.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-yellow-light.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-yellow-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-yellow.css" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/css/skins/skin-yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/js/app.js" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/js/app.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/js/demo.js" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/js/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/js/pages/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/dist/js/pages/dashboard2.js" afterPath="$PROJECT_DIR$/public/styleAdmin/dist/js/pages/dashboard2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-slider/bootstrap-slider.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-slider/bootstrap-slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-slider/slider.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-slider/slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/chartjs/Chart.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/chartjs/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/chartjs/Chart.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/chartjs/Chart.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/adapters/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/build-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/config.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/contents.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/af.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/bn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/bn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/bs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/cs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/cy.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/da.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/de-ch.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/de-ch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/de.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/el.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en-au.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en-au.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en-ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en-gb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/eo.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/es.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/et.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/eu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fa.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fo.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/gl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/gu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/he.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/hi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/hr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/hu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/id.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/is.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/it.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ja.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ka.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/km.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ko.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ku.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/lt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/lv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/mn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ms.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/nb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/nl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/no.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/pt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ro.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ru.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/si.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sq.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/th.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/tr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/tt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/tt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ug.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/uk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/vi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/zh.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/about/dialogs/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/image/dialogs/image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/link/dialogs/link.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/scayt/dialogs/options.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/table/dialogs/table.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/table/dialogs/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/css/samples.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/css/samples.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/js/sample.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/js/sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/js/sf.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/js/sf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/ajax.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/api.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/appendto.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/appendto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/assets/posteddata.php" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/assets/posteddata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/assets/uilanguages/languages.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/assets/uilanguages/languages.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/datafiltering.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/datafiltering.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/dialog/dialog.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/dialog/dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/divreplace.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/divreplace.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/enterkey/enterkey.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/enterkey/enterkey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/inlineall.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/inlineall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/inlinebycode.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/inlinebycode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/inlinetextarea.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/inlinetextarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/jquery.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/jquery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/magicline/magicline.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/magicline/magicline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/readonly.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/readonly.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/replacebyclass.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/replacebyclass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/replacebycode.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/replacebycode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/sample.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/sample.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/sample.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/sample_posteddata.php" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/sample_posteddata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/tabindex.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/tabindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/uicolor.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/uicolor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/uilanguages.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/uilanguages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/xhtmlstyle.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/old/xhtmlstyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/dialog_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_gecko.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/skins/moono/editor_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/styles.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ckeditor/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/colorpicker/bootstrap-colorpicker.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/colorpicker/bootstrap-colorpicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/colorpicker/bootstrap-colorpicker.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/colorpicker/bootstrap-colorpicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/colorpicker/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/colorpicker/bootstrap-colorpicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/dataTables.bootstrap.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/dataTables.bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/dataTables.bootstrap.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/dataTables.bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/dataTables.bootstrap.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/dataTables.bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/Readme.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/Readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/columns.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/complete-callback.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/complete-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/fill-both.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/fill-both.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/scrolling.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/step-callback.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/examples/step-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/License.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/License.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/alt_insert.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/alt_insert.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/col_filter.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/col_filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/colvis.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/colvis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/fixedheader.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/fixedheader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/jqueryui.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/new_init.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/new_init.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/predefined.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/predefined.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/realtime.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/realtime.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/reset.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/reset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/scrolling.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/server_side.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/server_side.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/state_save.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/examples/state_save.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/License.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/License.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/button_order.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/button_order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/group_columns.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/group_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/jqueryui.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/mouseover.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/mouseover.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/new_init.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/new_init.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/restore.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/restore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/text.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/title_callback.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/title_callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/two_tables.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/two_tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/License.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/License.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/colvis.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/colvis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/css_size.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/css_size.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/index_column.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/index_column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/right_column.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/right_column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/Readme.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/Readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/header_footer.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/header_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/two_tables.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/two_tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/Readme.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/Readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/events.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/html.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/html.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/scrolling.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/License.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/License.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/classes.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/compact.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/compact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/Readme.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/Readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/api_scrolling.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/api_scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/data/2500.txt" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/data/2500.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/data/ssp.php" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/data/ssp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/large_js_source.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/large_js_source.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/state_saving.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/examples/state_saving.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/ajax.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/alter_buttons.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/alter_buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/bootstrap.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/button_text.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/button_text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/collection.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/defaults.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/defaults.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/index.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/jqueryui.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/multi_instance.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/multi_instance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/multiple_tables.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/multiple_tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/new_init.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/new_init.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/pdf_message.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/pdf_message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/plug-in.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/plug-in.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_column.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_multi.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_multi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_os.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_os.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_single.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/select_single.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/simple.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/swf_path.html" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/examples/swf_path.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables_themeroller.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datatables/jquery.dataTables_themeroller.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/datepicker3.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/datepicker3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.az.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.az.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.bg.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.cs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.cy.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.da.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.de.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.el.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.es.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.et.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.fa.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.fi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.fr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.gl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.he.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.hr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.hu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.id.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.is.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.it.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ja.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ka.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.kk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.kk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.kr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.kr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.lt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.lv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.mk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ms.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.nb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.nl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.no.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.pl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.pt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ro.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.rs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.rs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ru.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sq.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sw.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.sw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.th.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.tr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ua.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.ua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.vi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/daterangepicker.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/daterangepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/daterangepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/moment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/moment.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/daterangepicker/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/fastclick/fastclick.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/fastclick/fastclick.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/excanvas.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/excanvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.colorhelpers.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.colorhelpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.canvas.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.categories.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.categories.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.crosshair.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.crosshair.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.errorbars.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.errorbars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.fillbetween.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.fillbetween.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.image.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.navigate.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.navigate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.resize.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.selection.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.selection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.stack.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.stack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.symbol.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.symbol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.threshold.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.threshold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.time.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/flot/jquery.flot.time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.print.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/fullcalendar/fullcalendar.print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/all.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/_all.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/_all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/aero.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/aero.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/blue.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/flat.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/flat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/green.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/grey.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/grey.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/orange.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/pink.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/purple.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/red.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/yellow.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/flat/yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/futurico/futurico.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/futurico/futurico.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/icheck.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/icheck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/icheck.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/icheck.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/_all.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/_all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/aero.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/aero.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/blue.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/green.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/grey.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/grey.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/line.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/line.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/orange.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/pink.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/purple.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/red.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/yellow.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/line/yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/_all.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/_all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/aero.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/aero.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/blue.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/green.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/grey.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/grey.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/minimal.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/minimal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/orange.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/pink.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/purple.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/red.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/yellow.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/minimal/yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/polaris/polaris.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/polaris/polaris.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/_all.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/_all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/aero.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/aero.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/blue.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/green.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/grey.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/grey.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/orange.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/pink.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/purple.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/red.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/square.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/square.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/yellow.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/iCheck/square/yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.date.extensions.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.date.extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.extensions.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.numeric.extensions.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.numeric.extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.phone.extensions.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.phone.extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.regex.extensions.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/input-mask/jquery.inputmask.regex.extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.skinFlat.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.skinFlat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.skinNice.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/ionslider/ion.rangeSlider.skinNice.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/jQuery/jquery-2.2.3.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/jQuery/jquery-2.2.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/jQueryUI/jquery-ui.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/jQueryUI/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/jQueryUI/jquery-ui.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/jQueryUI/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/jvectormap/jquery-jvectormap-1.2.2.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/jvectormap/jquery-jvectormap-1.2.2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/knob/jquery.knob.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/knob/jquery.knob.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/morris/morris.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/morris/morris.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/morris/morris.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/morris/morris.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/morris/morris.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/morris/morris.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/pace/pace.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/pace/pace.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/pace/pace.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/pace/pace.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/pace/pace.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/pace/pace.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ar.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/az.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/az.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/bg.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ca.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/cs.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/da.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/de.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/el.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/en.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/es.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/et.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/eu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/fa.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/fi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/fr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/gl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/he.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/hi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/hr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/hu.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/id.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/is.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/it.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ja.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/km.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ko.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/lt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/lv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/mk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ms.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/nb.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/nl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/pl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/pt-BR.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/pt-BR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/pt.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ro.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ru.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sr-Cyrl.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sr-Cyrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sv.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/th.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/tr.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/uk.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/vi.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/zh-CN.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/zh-CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/zh-TW.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/i18n/zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.full.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.full.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.full.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/select2/select2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/slimScroll/jquery.slimscroll.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/slimScroll/jquery.slimscroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/slimScroll/jquery.slimscroll.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/slimScroll/jquery.slimscroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/sparkline/jquery.sparkline.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/sparkline/jquery.sparkline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/sparkline/jquery.sparkline.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/sparkline/jquery.sparkline.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.min.css" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.min.js" afterPath="$PROJECT_DIR$/public/styleAdmin/plugins/timepicker/bootstrap-timepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/css/flexslider.css" afterPath="$PROJECT_DIR$/public/styleWeb/css/flexslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/styleWeb/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/css/jquery-ui.css" afterPath="$PROJECT_DIR$/public/styleWeb/css/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/css/jstarbox.css" afterPath="$PROJECT_DIR$/public/styleWeb/css/jstarbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/css/owl.carousel.css" afterPath="$PROJECT_DIR$/public/styleWeb/css/owl.carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/styleWeb/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/bootstrap-3.1.1.min.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/bootstrap-3.1.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/coreSlider.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/coreSlider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/imagezoom.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/imagezoom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery-ui.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery.flexslider.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery.flexslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery.jscrollpane.min.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery.jscrollpane.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery.min.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery.mousewheel.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery.mousewheel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jquery.mycart.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jquery.mycart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/jstarbox.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/jstarbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/main.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/owl.carousel.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/owl.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/responsiveslides.min.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/responsiveslides.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styleWeb/js/simpleCart.min.js" afterPath="$PROJECT_DIR$/public/styleWeb/js/simpleCart.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/parts/_admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/parts/_admin.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/parts/_menu.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/parts/_menu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/parts/buys/_listBuys.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/parts/buys/_listBuys.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/parts/buys/_modal.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/parts/buys/_modal.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/parts/dashboard/_listUsers.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/parts/dashboard/_listUsers.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/external/getsiteControl.blade.php" afterPath="$PROJECT_DIR$/resources/views/external/getsiteControl.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" afterPath="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -747,8 +22,35 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="31" column="72" lean-forward="true" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+            <state relative-caret-position="561">
+              <caret line="117" column="35" lean-forward="false" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+              <folding>
+                <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#8;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_product.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/parts/product/_product.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#363#1392#0#HTML" expanded="false" />
+                <element signature="e#1397#1656#0#HTML" expanded="false" />
+                <element signature="e#1662#2745#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getsiteControl.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/external/getsiteControl.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -765,8 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>size</find>
-      <find>form</find>
       <find>envio gra</find>
       <find>Compras superiores</find>
       <find>thumbnail</find>
@@ -795,6 +95,8 @@
       <find>calculo en el costo de envio</find>
       <find>$requestAndreani</find>
       <find>$total</find>
+      <find>getsite</find>
+      <find>const second</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -806,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/seeds/DiscountSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CheckoutsSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CategoriesSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CartSeeder.php" />
@@ -848,7 +149,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/parts/buys/_modal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/parts/dashboard/_listUsers.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/parts/dashboard/_listNewsLetter.blade.php" />
@@ -856,6 +156,8 @@
         <option value="$PROJECT_DIR$/resources/views/admin/parts/_admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/parts/_menu.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BuyController.php" />
+        <option value="$PROJECT_DIR$/resources/views/external/getsiteControl.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
       </list>
     </option>
@@ -1012,32 +314,6 @@
             <path>
               <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
               <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -1045,6 +321,13 @@
               <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="external" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
@@ -1052,6 +335,21 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="product" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -1135,12 +433,12 @@
       <workItem from="1552138799932" duration="10550000" />
       <workItem from="1552337536805" duration="729000" />
       <workItem from="1552339214770" duration="134000" />
-      <workItem from="1552339530026" duration="8757000" />
+      <workItem from="1552339530026" duration="10436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358852000" />
+    <option name="totallyTimeSpent" value="360531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-69" width="1616" height="916" extended-state="6" />
@@ -1180,13 +478,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProductRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/DataClientProfileRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-138">
@@ -1416,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/product/_product.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="388" column="123" lean-forward="false" selection-start-line="388" selection-start-column="123" selection-end-line="388" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/parts/category/_listCategory.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -1552,11 +835,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/external/getsiteControl.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/product/_product.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#363#1392#0#HTML" expanded="false" />
+            <element signature="e#1397#1656#0#HTML" expanded="false" />
+            <element signature="e#1662#2745#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="31" column="72" lean-forward="true" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="117" column="35" lean-forward="false" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#8;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

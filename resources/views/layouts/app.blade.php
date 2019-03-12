@@ -96,7 +96,10 @@
     <!--//End-rate-->
     @include('external.analitycs')
     @include('external.pixelFace')
-    @include('external._chat')
+    {{--@include('external._chat')--}}
+
+<!-- ManyChat -->
+    <script src="//widget.manychat.com/253540472242495.js" async="async"></script>
 </head>
 <body>
 <!--header-->
@@ -114,7 +117,7 @@
 @yield('content')
 
 @include('parts._footer')
-
+<div class="mcwidget-embed" data-widget-id="5182191"></div>
 @include('external.getsiteControl')
 </body>
 </html>

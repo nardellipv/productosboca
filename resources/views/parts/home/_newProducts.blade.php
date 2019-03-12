@@ -10,11 +10,11 @@
                                 <a href="{{ url('producto', $newProduct->slug) }}" class="new-gri">
                                     <div class="grid-img">
                                         <img src="{{ asset('images/products/'.$newProduct->photo) }}"
-                                             class="img-responsive" alt="">
+                                             class="img-responsive" alt="{{ $newProduct->name }}">
                                     </div>
                                     <div class="grid-img">
                                         <img src="{{ asset('images/products/'.$newProduct->photo) }}"
-                                             class="img-responsive" alt="">
+                                             class="img-responsive" alt="{{ $newProduct->name }}">
                                     </div>
                                 </a>
                             </figure>

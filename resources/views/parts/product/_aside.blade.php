@@ -6,7 +6,7 @@
                 <div class="recent-left">
                     <a href="{{ url('producto', $lastItem->slug) }}"><img class="img-responsive "
                                                                           src="{{ asset('images/products/'.$lastItem->photo) }}"
-                                                                          alt=""></a>
+                                                                          alt="{{ $lastItem->name }}"></a>
                 </div>
                 <div class="recent-right">
                     <h6 class="best2"><a href="{{ url('producto', $lastItem->slug) }}">{{ $lastItem->name }}</a></h6>

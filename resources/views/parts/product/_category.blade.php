@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $category->name)
+
 @section('content')
     <div class="content">
         <div class="products-agileinfo">
@@ -25,11 +27,11 @@
                                                                     <div class="grid-img">
                                                                         <img src="{{ asset('images/products/'.$product->photo) }}"
                                                                              class="img-responsive"
-                                                                             alt="">
+                                                                             alt="{{ $product->name }}">
                                                                     </div>
                                                                     <div class="grid-img">
                                                                         <img src="{{ asset('images/products/'.$product->photo) }}" class="img-responsive"
-                                                                             alt="">
+                                                                             alt="{{ $product->name }}">
                                                                     </div>
                                                                 </a>
                                                             </figure>

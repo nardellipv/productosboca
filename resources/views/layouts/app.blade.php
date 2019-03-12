@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>{{ config('app.name', 'Boca América') }}</title>
+    <title>Boca América @yield('title')</title>
     <!--css-->
     <link href="{{asset('styleWeb/css/bootstrap.css') }}" rel="stylesheet" media="all"/>
     <link href="{{asset('styleWeb/css/style.css') }}" rel="stylesheet" media="all"/>
@@ -31,7 +31,7 @@
     <!--css-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="Tienda exclusiva de productos de Boca Juniors. Envios a todo el país y excelentes descuentos.
+    <meta name="description" content="Tienda exclusiva de productos de Boca Juniors. Envios a todo el país y excelentes descuentos.
                     Venta de remeras, pantalones, merchandising, camisetas y mucho más"/>
     <script type="application/x-javascript"> addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -96,10 +96,9 @@
     <!--//End-rate-->
     @include('external.analitycs')
     @include('external.pixelFace')
-    {{--@include('external._chat')--}}
+    @include('external.hotkey')
+    @include('external._chat')
 
-<!-- ManyChat -->
-    <script src="//widget.manychat.com/253540472242495.js" async="async"></script>
 </head>
 <body>
 <!--header-->
@@ -117,7 +116,6 @@
 @yield('content')
 
 @include('parts._footer')
-<div class="mcwidget-embed" data-widget-id="5182191"></div>
 @include('external.getsiteControl')
 </body>
 </html>

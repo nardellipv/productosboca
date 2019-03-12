@@ -9,10 +9,10 @@
                         <figure>
                             <a href="{{ url('producto', $mostSell->slug) }}">
                                 <div class="grid-img">
-                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="">
+                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="{{ $mostSell->name }}">
                                 </div>
                                 <div class="grid-img">
-                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="">
+                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="{{ $mostSell->name }}">
                                 </div>
                             </a>
                         </figure>

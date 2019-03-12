@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $product->name)
+
 @section('script')
     <script src="{{asset('styleWeb/js/simpleCart.min.js') }}"></script>
     <script defer src="{{asset('styleWeb/js/jquery.flexslider.js') }}"></script>
@@ -377,11 +379,11 @@
                                             <a href="{{ url('producto', $related->slug) }}">
                                                 <div class="grid-img">
                                                     <img src="{{ asset('images/products/'.$related->photo) }}"
-                                                         class="img-responsive" alt="">
+                                                         class="img-responsive" alt="{{ $related->name }}">
                                                 </div>
                                                 <div class="grid-img">
                                                     <img src="{{ asset('images/products/'.$related->photo) }}"
-                                                         class="img-responsive" alt="">
+                                                         class="img-responsive" alt="{{ $related->name }}">
                                                 </div>
                                             </a>
                                         </figure>

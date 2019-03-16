@@ -567,6 +567,7 @@ h2.tittle {
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     padding: 0em;
+	margin-bottom: 20px;
 }
 .grid-arr .grid-arrival figure {
   position: relative;

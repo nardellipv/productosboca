@@ -94,10 +94,10 @@
         });
     </script>
     <!--//End-rate-->
-    @include('external.analitycs')
+{{--    @include('external.analitycs')
     @include('external.pixelFace')
     @include('external.hotkey')
-    @include('external._chat')
+    @include('external._chat')--}}
 
 </head>
 <body>
@@ -105,7 +105,6 @@
 <div class="header">
     @include('parts._header')
     @include('parts._menu')
-    <br>
     @if($countCart > 0)
         @if (Request::path() != 'carrito')
         <a href="{{ url('carrito') }}" class="btn btn-primary col-sm-offset-5 col-sm-2 text-center">ir al carrito</a>

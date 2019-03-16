@@ -425,6 +425,8 @@ a.simpleCart_empty {
 /*-- //header --*/
 .ban-bottom-w3l {
     padding: 5em 0;
+	background: #F9F8F8;
+	text-align: center;
 }
 .ban-bottom1 {
     float: left;
@@ -901,7 +903,8 @@ h3.tittle1 {
 }
 .latest-top {
     position: relative;
-	    overflow: hidden;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 .latest-text {
     background: rgba(21, 101, 192, 0.71);

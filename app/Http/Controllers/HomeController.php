@@ -2,6 +2,7 @@
 
 namespace bocaamerica\Http\Controllers;
 
+use bocaamerica\Category;
 use bocaamerica\Http\Requests\NewsLetterRequest;
 use bocaamerica\NewsLetter;
 use bocaamerica\Product;
@@ -11,12 +12,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $productsBanner = Product::where('section', 'BANNER')
-            ->orderBy('created_at', 'DESC')
-            ->take(3)
-            ->get();
-
-
         $newProducts = Product::where('section', 'NEW')
             ->orderBy('created_at', 'DESC')
             ->take(4)
@@ -27,7 +22,7 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
-        return view('home', compact('productsBanner', 'newProducts', 'mostSells'));
+        return view('home', compact( 'newProducts', 'mostSells'));
     }
 
     public function newsLetter(NewsLetterRequest $request)

@@ -94,10 +94,10 @@
         });
     </script>
     <!--//End-rate-->
-{{--    @include('external.analitycs')
+    @include('external.analitycs')
     @include('external.pixelFace')
     @include('external.hotkey')
-    @include('external._chat')--}}
+    @include('external._chat')
 
 </head>
 <body>

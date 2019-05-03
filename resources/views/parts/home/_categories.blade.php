@@ -1,20 +1,24 @@
-<div class="latest-w3">
+<section class="category-area">
     <div class="container">
-        {{--<h3 class="tittle1">Categorías</h3>--}}
-        <div class="latest-grids">
-            @foreach($categories as $category)
-            <div class="col-md-3 latest-grid">
-                <div class="latest-top">
-                    <a href="{{ url('categoria', $category->slug) }}">
-                    <img  src="{{ asset('images/categories/'.$category->photo) }}" class="img-responsive"  alt="{{ $category->name }}">
-                    </a>
-                    <div class="latest-text">
-                        <h4>{{ $category->name }}</h4>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    @foreach($categories as $category)
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-deal">
+                                <div class="overlay"></div>
+                                <img  src="{{ asset('images/categories/'.$category->photo) }}" class="img-responsive"  alt="{{ $category->name }}">
+                                <a href="{{ url('categoria', $category->slug) }}" class="img-pop-up"
+                                   target="_blank">
+                                    <div class="deal-details">
+                                        <h6 class="deal-title">{{ $category->name }}</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-            @endforeach
-            <div class="clearfix"></div>
         </div>
     </div>
-</div>
+</section>

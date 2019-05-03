@@ -22,7 +22,15 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
-        return view('home', compact( 'newProducts', 'mostSells'));
+        $offers = Product::where('offer', '!=', 'NULL')
+            ->orderBy('offer', 'DESC')
+            ->take(3)
+            ->get();
+
+        $expensive = Product::orderBy('price', 'DESC')
+            ->first();
+
+        return view('home', compact('newProducts', 'mostSells', 'offers', 'expensive'));
     }
 
     public function newsLetter(NewsLetterRequest $request)

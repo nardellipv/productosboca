@@ -1,63 +1,33 @@
-<div class="new-arrivals-w3agile">
-    <div class="container">
-        <h3 class="tittle1">Más Vendidos</h3>
-        <div class="arrivals-grids">
-            @foreach($mostSells as $mostSell)
-            <div class="col-md-3 arrival-grid simpleCart_shelfItem">
-                <div class="grid-arr">
-                    <div class="grid-arrival">
-                        <figure>
-                            <a href="{{ url('producto', $mostSell->slug) }}">
-                                <div class="grid-img">
-                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="{{ $mostSell->name }}">
-                                </div>
-                                <div class="grid-img">
-                                    <img src="{{ asset('images/products/'.$mostSell->photo) }}" class="img-responsive" alt="{{ $mostSell->name }}">
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                    @if($mostSell->quantity == 0)
-                        <div class="ribben1">
-                            <p>Sin Stock</p>
-                        </div>
+@foreach($mostSells as $mostSell)
+    <div class="col-lg-3 col-md-6">
+        <div class="single-product">
+            <img class="img-fluid" src="{{ asset('images/products/'.$mostSell->photo) }}" alt="">
+            <div class="product-details">
+                <h6>{{ str_limit($mostSell->name, 21) }}</h6>
+                <div class="price">
+                    @if($mostSell->offer)
+                        <h6>${{ $mostSell->offer }}</h6>
+                        <h6 class="l-through">${{ $mostSell->price }}</h6>
+                    @else
+                        <h6>${{ $mostSell->price }}</h6>
                     @endif
-                    <div class="women">
-                        <h6><a href="{{ url('producto', $mostSell->slug) }}">{{ str_limit($mostSell->name, 21) }}</a></h6>
-                        <div class="block star-rating" style="margin-left: 38%;">
-                            <div class="back-stars small ghosting">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="prd-bottom">
 
-                                <div class="front-stars" style="width: {{$mostSell->rating}}%">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <span class="size">Precio:</span>
-                        @if($mostSell->offer)
-                            <h5>
-                                <del>${{ $mostSell->price }}</del>
-                            </h5>
-                            <h4 class="item_price">${{ $mostSell->offer }}</h4>
-                        @else
-                            <p><em class="item_price">${{ $mostSell->price }}</em></p>
-                        @endif
-                        <br>
-                        <a href="{{ url('producto', $mostSell->slug) }}" class="my-cart-b item_add">Ver Más</a>
-                    </div>
+                    <a href="" class="social-info">
+                        <span class="ti-bag"></span>
+                        <p class="hover-text">Ver</p>
+                    </a>
+                    <a href="" class="social-info">
+                        <span class="lnr lnr-heart"></span>
+                        <p class="hover-text">Favorito</p>
+                    </a>
+                    <a href="" class="social-info">
+                        <span class="lnr lnr-move"></span>
+                        <p class="hover-text">Ver Más</p>
+                    </a>
                 </div>
             </div>
-            @endforeach
-            <div class="clearfix"></div>
         </div>
     </div>
-</div>
+@endforeach

@@ -1,31 +1,38 @@
-<div class="accessories-w3l" style="background: url({{ asset('styleWeb/img/imagenes/banner.jpg') }}) no-repeat 50% 0px; background-color: yellow">
-    <div class="container">
-        <h3 class="tittle" style="margin-top: 5%;">Mantenete informado con nuestro newsletter</h3>
-        <br><br>
-        <div class="content">
-            {!! Form::open(['method' => 'POST','url' => ['/news_letter'],'style'=>'display:inline']) !!}
-            {{ csrf_field() }}
-            <div class="row">
-                <div class="col-xs-3 col-sm-3 col-md-3 col-sm-offset-2">
-                    <div class="form-group">
-                        <input type="text" name="name" id="first_name" class="form-control input-lg" placeholder="Nombre" tabindex="1">
+<section class="exclusive-deal-area">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 no-padding exclusive-left">
+                <div class="row clock_sec clockdiv" id="clockdiv">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="{{ asset('images/products/'.$expensive->photo) }}" alt="">
                     </div>
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="form-group">
-                        <input type="email" name="email" id="last_name" class="form-control input-lg" placeholder="Email" tabindex="2">
-                    </div>
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2">
-                  {{--  <div class="form-group">
-                        {!! Recaptcha::render() !!}
-                    </div>--}}
-                    <div class="form-group">
-                        <input type="submit" value="Alta" class="btn btn-primary btn-block btn-lg" tabindex="7">
-                    </div>
+                <a href="{{ url('producto', $expensive->slug) }}" class="primary-btn">Comprar Ahora</a>
+            </div>
+            <div class="col-lg-6 no-padding exclusive-right">
+                <div class="active-exclusive-product-slider">
+                    @foreach($offers as $offer)
+                        <div class="single-exclusive-slider">
+                            <img class="img-fluid" src="{{ asset('images/products/'.$offer->photo) }}" alt="">
+                            <div class="product-details">
+                                <div class="price">
+                                    @if($offer->offer)
+                                        <h6>${{ $offer->offer }}</h6>
+                                        <h6 class="l-through">${{ $offer->price }}</h6>
+                                    @else
+                                        <h6>${{ $offer->price }}</h6>
+                                    @endif
+                                </div>
+                                <h4>{{ $offer->name }}</h4>
+                                <div class="add-bag d-flex align-items-center justify-content-center">
+                                    <a class="add-btn" href="{{ url('producto', $offer->slug) }}"><span class="ti-bag"></span></a>
+                                    <span class="add-text text-uppercase">Ir al producto</span>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-            {!! Form::Close() !!}
         </div>
     </div>
-</div>
+</section>

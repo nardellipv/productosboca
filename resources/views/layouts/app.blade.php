@@ -1,12 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <title>Boca América @yield('title')</title>
-    <!--css-->
-    <link href="{{asset('styleWeb/css/bootstrap.css') }}" rel="stylesheet" media="all"/>
-    <link href="{{asset('styleWeb/css/style.css') }}" rel="stylesheet" media="all"/>
-    <link href="{{asset('styleWeb/css/font-awesome.css') }}" rel="stylesheet">
 
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('styleWeb/favicon/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{asset('styleWeb/favicon/apple-icon-60x60.png') }}">
@@ -22,99 +20,68 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('styleWeb/favicon/favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('styleWeb/favicon/favicon-16x16.png') }}">
 
-    <meta property="og:url" content="https://bocaamerica.com"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Productos de Boca Juniors, todos en un solo lugar."/>
-    <meta property="og:description" content="Encontra productos de Boca Juniors en un solo lugar y al mejor precio."/>
-    <meta property="og:image" content="https://bocaamerica.com/styleWeb/img/logochico.png"/>
-
-    <!--css-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="description" content="Tienda exclusiva de productos de Boca Juniors. Envios a todo el país y excelentes descuentos.
-                    Venta de remeras, pantalones, merchandising, camisetas y mucho más"/>
-    <script type="application/x-javascript"> addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        } </script>
-    <script src="{{asset('styleWeb/js/jquery.min.js') }}"></script>
-    <link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ asset('styleWeb/css/star.css') }}" media="screen"/>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300'
-          rel='stylesheet' type='text/css'>
-    <!--search jQuery-->
-    <script src="{{asset('styleWeb/js/main.js') }}"></script>
-    <!--search jQuery-->
-    <script src="{{asset('styleWeb/js/responsiveslides.min.js') }}"></script>
-
-    @yield('script')
-
-    <script>
-        $(function () {
-            $("#slider").responsiveSlides({
-                auto: true,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                pager: true,
-            });
-        });
-    </script>
-    <!--mycart-->
-    <script type="text/javascript" src="{{asset('styleWeb/js/bootstrap-3.1.1.min.js') }}"></script>
-    <!-- cart -->
-    <script src="{{asset('styleWeb/js/simpleCart.min.js') }}"></script>
-    <!-- cart -->
-    <!--start-rate-->
-    <script src="{{asset('styleWeb/js/jstarbox.js') }}"></script>
-    <link rel="stylesheet" href="{{asset('styleWeb/css/jstarbox.css') }}" media="screen"
-          charset="utf-8"/>
-    <script type="text/javascript">
-        jQuery(function () {
-            jQuery('.starbox').each(function () {
-                var starbox = jQuery(this);
-                starbox.starbox({
-                    average: starbox.attr('data-start-value'),
-                    changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
-                    ghosting: starbox.hasClass('ghosting'),
-                    autoUpdateAverage: starbox.hasClass('autoupdate'),
-                    buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
-                    stars: starbox.attr('data-star-count') || 5
-                }).bind('starbox-value-changed', function (event, value) {
-                    if (starbox.hasClass('random')) {
-                        var val = Math.random();
-                        starbox.next().text(' ' + val);
-                        return val;
-                    }
-                })
-            });
-        });
-    </script>
-    <!--//End-rate-->
-    @include('external.analitycs')
-    @include('external.pixelFace')
-    @include('external.hotkey')
-    @include('external._chat')
-
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Karma Shop</title>
+    <!--
+        CSS
+        ============================================= -->
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/linearicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/nouislider.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/ion.rangeSlider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/ion.rangeSlider.skinFlat.css') }}" />
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('styleWeb/css/main.css') }}">
 </head>
+
 <body>
-<!--header-->
-<div class="header">
-    @include('parts._header')
+
+<!-- Start Header Area -->
+<header class="header_area sticky-header">
+
     @include('parts._menu')
-    @if($countCart > 0)
-        @if (Request::path() != 'carrito')
-        <a href="{{ url('carrito') }}" class="btn btn-primary col-sm-offset-5 col-sm-2 text-center">ir al carrito</a>
-            @endif
-    @endif
-</div>
 
-@yield('content')
+</header>
+<!-- End Header Area -->
 
-@include('parts._footer')
-@include('external.getsiteControl')
+<!-- start banner Area -->
+    @include('parts._header')
+<!-- End banner Area -->
+
+
+    @yield('content')
+
+<!-- start footer Area -->
+    @include('parts._footer')
+<!-- End footer Area -->
+
+<script src="{{ asset('styleWeb/js/vendor/jquery-2.2.4.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="{{ asset('styleWeb/js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('styleWeb/js/jquery.ajaxchimp.min.js') }}"></script>
+<script src="{{ asset('styleWeb/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('styleWeb/js/jquery.sticky.js') }}"></script>
+<script src="{{ asset('styleWeb/js/nouislider.min.js') }}"></script>
+<script src="{{ asset('styleWeb/js/countdown.js') }}"></script>
+<script src="{{ asset('styleWeb/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('styleWeb/js/owl.carousel.min.js') }}"></script>
+<!--gmaps Js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+<script src="{{ asset('styleWeb/js/gmaps.min.js') }}"></script>
+<script src="{{ asset('styleWeb/js/main.js') }}"></script>
 </body>
+
 </html>

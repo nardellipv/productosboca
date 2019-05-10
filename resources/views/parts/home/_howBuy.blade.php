@@ -9,19 +9,23 @@
                         <div class="col-md-4">
                             <div class="single-defination">
                                 <h4 class="mb-20">Elije el producto</h4>
-                                <p>Elegí todos los productos de la tiendas y agregalos al carrito.</p>
+                                <p>Elegí el producto de la tiendas que más te guste, selecciona el talle y la cantidad y agregalo al carrito.
+                                Si no estas seguro sobre algún producto, puedes chatear con algún representante directamente desde el sitio o enviarnos
+                                un email.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-defination">
                                 <h4 class="mb-20">Confirmar pedido</h4>
-                                <p>En el carrito completa los datos de contactos, elegí el medio de pago y confirma la compra.</p>
+                                <p>En el carrito completa los datos de contactos, puedes crear una cuenta y recibir ofertas en tu email
+                                    o si quieres puedes realizar la compra sin registro previo, elegí el medio de pago y confirma la compra.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="single-defination">
                                 <h4 class="mb-20">Disfrutar producto</h4>
-                                <p>En un máximo de 7 días hábiles disfruta de los producto.</p>
+                                <p>Recibiras un email con los datos de la compra y en un máximo de 5 días hábiles disfruta del producto comprado en
+                                    nuestra tienda Boca América.</p>
                             </div>
                         </div>
                     </div>

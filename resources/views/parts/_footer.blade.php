@@ -16,8 +16,8 @@
                         <li><a href="{{ route('envios') }}">Envios</a></li>
                         <li><a href="{{ route('payments') }}">Formas de pago</a></li>
                         {{--<li><a href="{{ route('buy') }}">Como Comprar</a></li>--}}
-                        <li><a href="{{ route('termns') }}">Términos y condiciones</a></li>
-                        <li><a href="{{ route('policity') }}">Políticas de privacidad</a></li>
+                        <li><a href="{{ route('termns') }}">Términos y Condiciones</a></li>
+                        <li><a href="{{ route('policity') }}">Política de Privacidad</a></li>
                     </ul>
                 </div>
             </div>

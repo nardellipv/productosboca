@@ -1495,7 +1495,8 @@ pre code {
     .col-xl-9 {
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;
-        max-width: 75%
+        max-width: 75%;
+        margin: 0px 0px 50px;
     }
     .col-xl-10 {
         -ms-flex: 0 0 83.333333%;

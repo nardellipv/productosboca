@@ -4,7 +4,7 @@
             <div class="col-lg-6 no-padding exclusive-left">
                 <div class="row clock_sec clockdiv" id="clockdiv">
                     <div class="col-lg-12">
-                        <img class="img-fluid" src="{{ asset('images/products/'.$expensive->photo) }}" alt="">
+                        <img class="img-fluid" src="{{ asset('images/products/'.$expensive->photo) }}" alt="{{$expensive->name}}">
                     </div>
                 </div>
                 <a href="{{ url('producto', $expensive->slug) }}" class="primary-btn">Comprar Ahora</a>
@@ -13,7 +13,7 @@
                 <div class="active-exclusive-product-slider">
                     @foreach($offers as $offer)
                         <div class="single-exclusive-slider">
-                            <img class="img-fluid" src="{{ asset('images/products/'.$offer->photo) }}" alt="">
+                            <img class="img-fluid" src="{{ asset('images/products/'.$offer->photo) }}" alt="{{$offer->name}}">
                             <div class="product-details">
                                 <div class="price">
                                     @if($offer->offer)

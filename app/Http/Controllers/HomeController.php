@@ -12,12 +12,14 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $newProducts = Product::where('section', 'NEW')
+        $newProducts = Product::with('category')
+            ->where('section', 'NEW')
             ->orderBy('created_at', 'DESC')
             ->take(4)
             ->get();
 
-        $mostSells = Product::where('section', 'MOSTSELL')
+        $mostSells = Product::with('category')
+            ->where('section', 'MOSTSELL')
             ->orderBy('created_at', 'DESC')
             ->take(4)
             ->get();

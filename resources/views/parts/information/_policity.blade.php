@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="content">
-        <div class="products-agileinfo">
-            <h2 class="tittle">Políticas de privacidad</h2>
+    <section class="order_details section_gap">
+        <div class="container">
+            <br><br><br>
+            <h3 class="title_confirmation">Políticas de privacidad.</h3>
             <div class="container">
                 <div class="product-agileinfo-grids w3l">
                     <p><strong>POLÍTICA DE PRIVACIDAD</strong></p>
@@ -69,5 +70,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 @endsection

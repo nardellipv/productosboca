@@ -4,6 +4,7 @@ namespace bocaamerica\Http\Controllers;
 
 use Andreani\Andreani;
 use Andreani\Requests\CotizarEnvio;
+use bocaamerica\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -31,21 +32,25 @@ class ProductController extends Controller
             ->get();
 
         $relateds = Product::where('category_id', $product->category_id)
-            ->take(4)
+            ->take(6)
             ->get();
 
         $reviews = Review::with(['user'])
             ->where('product_id', $product->id)
             ->get();
 
-        if (Auth::check()) {
+        $countReview = Review::where('product_id', $product->id)
+            ->count();
+
+
+        /*if (Auth::check()) {
             $userReview = Review::where('user_id', auth::user()->id)
                 ->where('product_id', $product->id)
                 ->first();
-        }
+        }*/
 
         return view('parts.product._product', compact('product', 'pictures', 'sizes', 'relateds', 'reviews',
-            'tarifa', 'userReview'));
+            'tarifa', 'countReview'));
     }
 
     public function calcular($slug, Request $request)

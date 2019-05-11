@@ -18,39 +18,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="_checkout.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="331" column="61" selection-start-line="331" selection-start-column="61" selection-end-line="331" selection-end-column="61" />
-              <folding>
-                <element signature="e#4841#8824#0#HTML" />
-                <element signature="e#12301#16604#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_cart.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuyController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BuyController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,9 +115,9 @@
         <option value="$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/_menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/email/_compraInfo.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BuyController.php" />
         <option value="$PROJECT_DIR$/storage/app/public/costoenvio.txt" />
         <option value="$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BuyController.php" />
       </list>
     </option>
   </component>
@@ -314,68 +282,6 @@
               <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
               <item name="productosboca" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -486,16 +392,15 @@
       <workItem from="1557349892277" duration="10168000" />
       <workItem from="1557438790601" duration="5380000" />
       <workItem from="1557496150369" duration="11427000" />
-      <workItem from="1557578850159" duration="1805000" />
+      <workItem from="1557578850159" duration="2087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469354000" />
+    <option name="totallyTimeSpent" value="469636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-140" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32824427" />
@@ -503,8 +408,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6941323" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.6941323" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23375" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -838,14 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BuyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="331" column="61" selection-start-line="331" selection-start-column="61" selection-end-line="331" selection-end-column="61" />
-          <folding>
-            <element signature="e#4841#8824#0#HTML" />
-            <element signature="e#12301#16604#0#HTML" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="152" column="78" selection-start-line="152" selection-start-column="78" selection-end-line="152" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -856,10 +757,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BuyController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
+        <state relative-caret-position="471">
+          <caret line="331" column="61" selection-start-line="331" selection-start-column="61" selection-end-line="331" selection-end-column="61" />
+          <folding>
+            <element signature="e#4841#8824#0#HTML" />
+            <element signature="e#12301#16604#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>

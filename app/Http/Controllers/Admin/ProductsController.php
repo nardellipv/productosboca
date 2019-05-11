@@ -57,13 +57,13 @@ class ProductsController extends Controller
             }
         }
 
-        $thums = new Picture();
-        $thums->name = $product->name;
-        $thums->url = $request['thum'];
-        $thums->product_id = $product->id;
-        $thums->save();
-
         if ($request->thum) {
+            $thums = new Picture();
+            $thums->name = $product->name;
+            $thums->url = $request['thum'];
+            $thums->product_id = $product->id;
+            $thums->save();
+
             $image = $request->file('thum');
             $input['thum'] = time() . '.' . $image->getClientOriginalExtension();
 
@@ -71,10 +71,10 @@ class ProductsController extends Controller
             $image->move($destinationPath, $input['thum']);
 
             $thums->url = $input['thum'];
+
+
+            $thums->update();
         }
-
-        $thums->update();
-
 
         Session::flash('message', 'Producto agregado correctamente');
         return back();

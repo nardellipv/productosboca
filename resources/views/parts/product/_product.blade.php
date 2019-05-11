@@ -2,432 +2,263 @@
 
 @section('title', $product->name)
 
-@section('script')
-    <script src="{{asset('styleWeb/js/simpleCart.min.js') }}"></script>
-    <script defer src="{{asset('styleWeb/js/jquery.flexslider.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('styleWeb/css/flexslider.css') }}" media="screen"/>
-    <script src="{{asset('styleWeb/js/imagezoom.js') }}"></script>
-
-    <script>
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
-
-        let countDown = new Date("{{ Date::parse($product->time_offer)->format('F j, Y') }}").getTime(),
-            x = setInterval(function () {
-
-                let now = new Date().getTime(),
-                    distance = countDown - now;
-
-                document.getElementById('days').innerText = Math.floor(distance / (day)),
-                    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-                //do something later when date is reached
-                //if (distance < 0) {
-                //  clearInterval(x);
-                //  'IT'S MY BIRTHDAY!;
-                //}
-
-            }, second)
-    </script>
-    <script>
-        // Can also be used with $(document).ready()
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails"
-            });
-        });
-    </script>
-
-    <style>
-        .btn span.glyphicon {
-            opacity: 0;
-        }
-
-        .btn.active span.glyphicon {
-            opacity: 1;
-        }
-
-        .acidjs-rating-stars,
-        .acidjs-rating-stars label::before {
-            display: inline-block;
-        }
-
-        .acidjs-rating-stars label:hover,
-        .acidjs-rating-stars label:hover ~ label {
-            color: #189800;
-        }
-
-        .acidjs-rating-stars * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .acidjs-rating-stars input {
-            display: none;
-        }
-
-        .acidjs-rating-stars {
-            unicode-bidi: bidi-override;
-            direction: rtl;
-        }
-
-        .acidjs-rating-stars label {
-            color: #ccc;
-        }
-
-        .acidjs-rating-stars label::before {
-            content: "\2605";
-            width: 18px;
-            line-height: 18px;
-            text-align: center;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .acidjs-rating-stars input:checked ~ label {
-            color: #f5b301;
-        }
-    </style>
-@endsection
-
 @section('content')
-    <div class="content">
-        <div class="cart-items">
-            <div class="container">
-                <div class="single-grids">
-                    <div class="col-md-9 single-grid">
-                        @include('layouts.alerts.success')
-                        @include('layouts.alerts.error')
-                        <div class="single-top">
-                            <div class="single-left">
-                                <div class="flexslider">
-                                    <ul class="slides">
-                                        @foreach($pictures as $picture)
-                                            <li data-thumb="{{ asset('images/products/'.$picture->url) }}">
-                                                <div class="thumb-image"><img
-                                                            src="{{ asset('images/products/'.$picture->url) }}"
-                                                            data-imagezoom="true"
-                                                            class="img-responsive">
-                                                </div>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
+    @include('layouts.alerts.success')
+    @include('layouts.alerts.error')
+    <div class="product_image_area">
+        <div class="container">
+            <div class="row s_product_inner">
+                <div class="col-lg-6">
+                    <div class="s_Product_carousel">
+                        @foreach($pictures as $picture)
+                            <div class="single-prd-item">
+                                <img class="img-fluid" src="{{ asset('images/products/'.$picture->url) }}"
+                                     alt="{{$picture->name}}">
                             </div>
-                            <div class="single-right simpleCart_shelfItem">
-                                <h4>{{ $product->name }}</h4>
-                                <div class="block star-rating">
-                                    <div class="back-stars small ghosting">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-
-                                        <div class="front-stars" style="width: {{$product->rating}}%">
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-
-                                @if($product->offer)
-                                    <h3>
-                                        <del>${{ $product->price }}</del>
-                                    </h3>
-                                    <p class="price item_price">${{ $product->offer }}</p>
-                                @else
-                                    <p class="price item_price">${{ $product->price }}</p>
-                                @endif
-
-                                <div class="description">
-                                    <p><span>Descripción : </span> {{ $product->description }}</p>
-                                </div>
-                                <br><br>
-                                @if($product->time_offer)
-                                    <div class="description">
-                                        <h4>La oferta termina en:</h4>
-                                        <ul style="font-size: 2em;">
-                                            <li style="display: inline-block;"><span id="days"></span> Días</li>
-                                            <li style="display: inline-block;"><span id="hours"></span> Hs</li>
-                                            <li style="display: inline-block;"><span id="minutes"></span> Min</li>
-                                            <li style="display: inline-block;"><span id="seconds"></span> Seg</li>
-                                        </ul>
-                                    </div>
-                                @endif
-
-                                {!! Form::open(['method' => 'POST','url' => ['/carrito/agregar', $product->id],'style'=>'display:inline']) !!}
-                                {{ csrf_field() }}
-                                <div class="color-quality">
-                                    <h6>Cantidad :</h6>
-                                    <div class="quantity">
-                                        <div class="quantity-select">
-                                            <input type="number" min="1" max="20" class="entry value1" name="quantity"
-                                                   style="width: 15%;" placeholder="1" value="1">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="color-quality">
-                                    <div class="btn-group" data-toggle="buttons">
-                                        <h6>Talle:</h6>
-                                        @foreach($sizes as $size)
-                                            <label class="btn btn-link">
-                                                <label>{{ $size->size->size }}</label>
-                                                <input type="radio" name="size"
-                                                       value="{{ $size->size->size }}" required />
-                                                <span class="glyphicon glyphicon-ok"></span>
-                                            </label>
-                                        @endforeach
-                                    </div>
-                                    <br><br>
-                                    @if($product->quantity == 0)
-                                        <a href="#" class="button1"> Sin Stock</a>
-                                    @else
-                                        <button type="submit" class="my-cart-b item_add">Agregar al
-                                            carrito
-                                        </button>
-                                    @endif
-                                </div>
-                                {!! Form::close() !!}
-                                <br>
-
-                                <h5>Envío estimado a todo el país $350</h5>
-                                {{--{!! Form::open(['method' => 'POST','route' => ['calcular', $product->slug],'style'=>'display:inline']) !!}
-                                {{ csrf_field() }}
-                                <div class="color-quality">
-                                    <h6>Calcular Envio :</h6>
-                                    <div class="quantity">
-                                        <div class="quantity-select">
-                                            <input type="number" class="entry value1" style="width: 30%;" name="envio"
-                                                   placeholder="Código Postal">
-                                            <button type="submit" class="my-cart-b item_add">Calcular</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                {!! Form::Close() !!}--}}
-
-                                @if($tarifa > 0)
-                                    <p class="well">El costo de envio es de aprox.: $ {{ $tarifa }}</p>
-                                @elseif($tarifa == -1)
-                                    <p class="well">Error en el código postal <a
-                                                href="https://www.andreani.com/buscador-de-codigos-postales"
-                                                target="_blank">Consulte
-                                            aquí</a></p>
-                                @endif
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                        @endforeach
                     </div>
-                    @include('parts.product._aside')
-                    <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="s_product_text">
+                        <h3>{{ $product->name }}</h3>
+                        @if($product->offer)
+                            <h2>${{ $product->offer }}</h2>
+                            <del><h2 class="l-through">${{ $product->price }}</h2></del>
+                        @else
+                            <h2>${{ $product->price }}</h2>
+                        @endif
+                        <ul class="list">
+                            <li><a class="active" href="#"><span>Categoría</span> : {{ $product->category->name }}</a>
+                            </li>
+                            @if($product->quantity == 0)
+                                <li><a href="#"><span>Disponibilidad</span> : Sin Stock</a></li>
+                            @else
+                                <li><a href="#"><span>Disponibilidad</span> : En Stock</a></li>
+                            @endif
+                        </ul>
+                        <p>{{ $product->description }}</p>
 
-                    <div class="product-w3agile">
-                        <div class="product-grids">
-                            <div class="col-md-8 product-grid1">
-                                <div class="tab-wl3">
-                                    <div class="bs-example bs-example-tabs" role="tabpanel"
-                                         data-example-id="togglable-tabs">
-                                        <ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
-                                            <li role="presentation" class="active"><a href="#home" id="home-tab"
-                                                                                      role="tab"
-                                                                                      data-toggle="tab"
-                                                                                      aria-controls="home"
-                                                                                      aria-expanded="true"><img
-                                                            src="{{ asset('styleWeb/img/icons/circle.png') }}"> </a>
-                                            </li>
-                                            <li role="presentation"><a href="#reviews" role="tab" id="reviews-tab"
-                                                                       data-toggle="tab" aria-controls="reviews">Reviews
-                                                </a></li>
+                        {!! Form::open(['method' => 'POST','url' => ['/carrito/agregar', $product->id],'style'=>'display:inline']) !!}
+                        {{ csrf_field() }}
+                        <div class="row">
+                            @if(count($sizes) > 1)
+                                <div class="col-md-3">
+                                    <select name="size">
+                                        <option value="">Talla:</option>
+                                        <option value="">---------------------</option>
+                                        @foreach($sizes as $size)
+                                            <option value="{{ $size->size->size }}">{{ $size->size->size }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            @else
+                                <input name="size" value="Única Medida" required hidden>
+                            @endif
+                            <div class="col-md-4">
+                                <select name="quantity">
+                                    <option value="">Cantidad:</option>
+                                    <option value="">--------------------</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="card_area d-flex align-items-center">
+                            @if($product->quantity == 0)
+                                <a href="#" class="primary-btn disabled">Agregar</a href="#">
+                            @else
+                                <button class="primary-btn">Agregar</button>
+                            @endif
+                        </div>
+                        {!! Form::Close() !!}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                        </ul>
-                                        <div id="myTabContent" class="tab-content">
-                                            <div role="tabpanel" class="tab-pane fade in active" id="home"
-                                                 aria-labelledby="home-tab">
-
+    <section class="product_description_area">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                       aria-controls="contact"
+                       aria-selected="false">Comentarios
+                        <span> {{ $countReview > 0 ? '('.$countReview .')' : '(0)' }} </span></a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="comment_list">
+                                @if($countReview == 0)
+                                    <p>Se el primero en comentar el producto</p>
+                                @else
+                                    @foreach($reviews as $review)
+                                        <div class="review_item">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h4>{{ $review->user->name }}</h4>
+                                                    <h5>{{ Date::parse($review->created_at)->format('j-m-Y H:m') }}
+                                                        Hs.</h5>
+                                                </div>
                                             </div>
-                                            <div role="tabpanel" class="tab-pane fade" id="reviews"
-                                                 aria-labelledby="reviews-tab">
-                                                <div class="descr">
-                                                    <div class="reviews-top">
-                                                        @foreach($reviews as $review)
-                                                            <div class="reviews-right">
-                                                                <ul>
-                                                                    <li><a href="#">{{ $review->user->name }}</a></li>
-                                                                </ul>
-                                                                <p>{{ $review->review }}</p>
-                                                            </div>
-                                                        @endforeach
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                    @if (Auth::check())
-                                                        {!! Form::open(['method' => 'POST','route' => ['rating', $product->id],'style'=>'display:inline']) !!}
-                                                        {{ csrf_field() }}
-                                                        @if(!$userReview)
-                                                            <div class="reviews-bottom">
-                                                                <h4>Agregar Reviews</h4>
-                                                                <p>Tu email nunca será publicado. Solo publicaremos tu
-                                                                    nombre de pila. *</p>
-                                                                <p>Tu Rating sobre el producto</p>
-                                                                <div class="acidjs-rating-stars">
-                                                                    <input type="radio" name="rating" id="group-1-0"
-                                                                           value="100" required/><label
-                                                                            for="group-1-0"></label>
-                                                                    <input type="radio" name="rating" id="group-1-1"
-                                                                           value="80"/><label for="group-1-1"></label>
-                                                                    <input type="radio" name="rating" id="group-1-2"
-                                                                           value="60"/><label for="group-1-2"></label>
-                                                                    <input type="radio" name="rating" id="group-1-3"
-                                                                           value="40"/><label for="group-1-3"></label>
-                                                                    <input type="radio" name="rating" id="group-1-4"
-                                                                           value="20"/><label for="group-1-4"></label>
-                                                                </div>
-                                                                <br><br>
-                                                                <textarea type="text" Name="review"
-                                                                          placeholder="Mensaje..."
-                                                                          required=""></textarea>
-                                                                <input type="submit" value="Enviar">
-                                                                <br>
-                                                            </div>
-                                                        @endif
-                                                        {!! Form::Close() !!}
-                                                        <br><br>
-                                                    @else
-                                                        <div class="descr">
-                                                            <div class="reviews-bottom">
-                                                                <form method="POST" action="{{ route('login') }}">
-                                                                    @csrf
-                                                                    <label>Debes ingresar para dejar tu
-                                                                        review </label> <a href=""
-                                                                                           class="btn btn-primary">Crear
-                                                                        Cuenta</a>
-
-                                                                    <div class="row">
-                                                                        <div class="col-md-6 row-grid">
-                                                                            <label>Email</label>
-                                                                            <input type="email" value="Email"
-                                                                                   class="{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                                                                                   Name="email"
-                                                                                   onfocus="this.value = '';"
-                                                                                   onblur="if (this.value == '') {this.value = 'Email';}"
-                                                                                   required="">
-                                                                        </div>
-                                                                        @if ($errors->has('email'))
-                                                                            <span class="invalid-feedback" role="alert">
+                                            <p>{{ $review->review }}</p>
+                                        </div>
+                                    @endforeach
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="review_box">
+                                <h4>Comenta el producto</h4>
+                                @if (Auth::check())
+                                    <form class="row contact_form" action="contact_process.php" method="post"
+                                          id="contactForm" novalidate="novalidate">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                       value="{{ Auth::user()->name }}" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="lastname" name="lastname"
+                                                       value="{{ Auth::user()->lastname }}" disabled>
+                                                <small>Tu apellido no será publicado</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                       value="{{ Auth::user()->email }}" disabled>
+                                                <small>Tu email no será publicado</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                            <textarea class="form-control" name="message" id="message" rows="1"
+                                                      placeholder="Mensaje"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 text-right">
+                                            <button type="submit" value="submit" class="btn primary-btn">Enviar
+                                                Comentario
+                                            </button>
+                                        </div>
+                                    </form>
+                                @else
+                                    <form method="POST" action="{{ route('login') }}">
+                                        @csrf
+                                        <label>Debes ingresar para dejar tu
+                                            comentario </label> <a href="{{ url('register') }}"
+                                                                   class="genric-btn danger circle arrow">Crear
+                                            Cuenta<span class="lnr lnr-arrow-right"></span></a>
+                                        <br><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mt-10">
+                                                    <input type="email" value="Email"
+                                                           class="single-input{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                                           Name="email"
+                                                           onfocus="this.value = '';"
+                                                           onblur="if (this.value == '') {this.value = 'Email';}"
+                                                           onfocus="this.placeholder = ''"
+                                                           onblur="this.placeholder = 'email'"
+                                                           required>
+                                                </div>
+                                                @if ($errors->has('email'))
+                                                    <span class="invalid-feedback" role="alert">
                                                                                 <strong>{{ $errors->first('email') }}</strong>
                                                                             </span>
-                                                                        @endif
-
-                                                                        <div class="col-md-6 row-grid">
-                                                                            <label>Password</label>
-                                                                            <input type="password" value="password"
-                                                                                   class="{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                                                                   Name="password"
-                                                                                   onfocus="this.value = '';"
-                                                                                   onblur="if (this.value == '') {this.value = 'Password';}"
-                                                                                   required="">
-                                                                            @if ($errors->has('password'))
-                                                                                <span class="invalid-feedback"
-                                                                                      role="alert">
+                                                @endif
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mt-10">
+                                                    <input type="password" value="password"
+                                                           class="single-input{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                                           Name="password"
+                                                           onfocus="this.value = '';"
+                                                           onblur="if (this.value == '') {this.value = 'Password';}"
+                                                           onfocus="this.placeholder = ''"
+                                                           onblur="this.placeholder = 'password'">
+                                                </div>
+                                                @if ($errors->has('password'))
+                                                    <span class="invalid-feedback"
+                                                          role="alert">
                                                                                     <strong>{{ $errors->first('password') }}</strong>
                                                                                 </span>
-                                                                            @endif
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                    </div>
-                                                                    <input type="submit" value="Ingresar"> <a
-                                                                            href="{{ route('password.request') }}">
-                                                                        Olvide mi Password</a>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <br><br>
-                                                    @endif
-                                                </div>
+                                                @endif
                                             </div>
-                                            <div role="tabpanel" class="tab-pane fade" id="custom"
-                                                 aria-labelledby="custom-tab">
-
+                                            <br><br><br>
+                                            <div class="offset-2">
+                                                <button type="submit" class="genric-btn primary">Ingresar</button>
+                                                <a href="{{ route('password.request') }}" class="genric-btn danger">Olvide
+                                                    mi contraseña</a>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </form>
+                                @endif
                             </div>
-                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="new-arrivals-w3agile">
-                <div class="container">
-                    <h3 class="tittle1">Productos Relacionados</h3>
-                    <div class="arrivals-grids">
+        </div>
+    </section>
+    <section class="related-product-area section_gap_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+                        <h1>Productos Relacionados</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
                         @foreach($relateds as $related)
-                            <div class="col-md-3 arrival-grid simpleCart_shelfItem">
-                                <div class="grid-arr">
-                                    <div class="grid-arrival">
-                                        <figure>
-                                            <a href="{{ url('producto', $related->slug) }}">
-                                                <div class="grid-img">
-                                                    <img src="{{ asset('images/products/'.$related->photo) }}"
-                                                         class="img-responsive" alt="{{ $related->name }}">
-                                                </div>
-                                                <div class="grid-img">
-                                                    <img src="{{ asset('images/products/'.$related->photo) }}"
-                                                         class="img-responsive" alt="{{ $related->name }}">
-                                                </div>
-                                            </a>
-                                        </figure>
-                                    </div>
-                                    <div class="women">
-                                        <h6><a href="{{ url('producto', $related->slug) }}">{{ str_limit($related->name, 20) }}</a>
-                                        </h6>
-
-                                        <div class="block star-rating" style="margin-left: 38%;">
-                                            <div class="back-stars small ghosting">
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-
-                                                <div class="front-stars" style="width: {{$related->rating}}%">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                </div>
-                                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+                                <div class="single-related-product d-flex">
+                                    <a href="{{ url('producto', $related->slug) }}"><img
+                                                src="{{ asset('images/products/'.$related->photo) }}"
+                                                alt="{{ $related->name }}" width="100%"></a>
+                                    @if($related->quantity == 0)
+                                        <b>Sin Stock</b>
+                                    @endif
+                                    <div class="desc">
+                                        <a href="{{ url('producto', $related->slug) }}"
+                                           class="title">{{ $related->name }}</a>
+                                        <div class="price">
+                                            @if($related->offer)
+                                                <h6>${{ $related->offer }}</h6>
+                                                <h6 class="l-through">${{ $related->price }}</h6>
+                                            @else
+                                                <h6>${{ $related->price }}</h6>
+                                            @endif
                                         </div>
-                                        <br>
-                                        @if($product->offer)
-                                            <h5>
-                                                <del>${{ $product->price }}</del>
-                                            </h5>
-                                            <h4 class="item_price">${{ $product->offer }}</h4>
-                                        @else
-                                            <p><em class="item_price">${{ $product->price }}</em></p>
-                                        @endif
-                                        <br>
-                                        <a href="{{ url('producto', $product->slug) }}" class="my-cart-b item_add">Ver
-                                            Más</a>
                                     </div>
                                 </div>
                             </div>
                         @endforeach
                     </div>
                 </div>
+                <div class="col-lg-3">
+                    <div class="ctg-right">
+                        <a href="#" target="_blank">
+                            <img class="img-fluid d-block mx-auto" src="{{ asset('styleWeb/img/category/c5.jpg') }}"
+                                 alt="{{$related->name}}">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 @endsection

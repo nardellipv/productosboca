@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="content">
-        <div class="products-agileinfo">
-            <h2 class="tittle">Formas de pagos</h2>
+    <section class="order_details section_gap">
+        <div class="container">
+            <br><br><br>
+            <h3 class="title_confirmation">Formas de pago.</h3>
             <div class="container">
                 <div class="product-agileinfo-grids w3l">
                     <p><strong>Medios de pagos</strong></p>
@@ -40,5 +41,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 @endsection

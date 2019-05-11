@@ -15,7 +15,8 @@ Route::get('/pendiente', 'HomeController@pendiente')->name('pendiente');
 Route::get('/error', 'HomeController@error')->name('error');
 
 Route::get('/carrito', 'BuyController@listProducts')->name('listProducts');
-Route::post('/carrito/procesar-pago', 'BuyController@checkout')->name('checkout');
+Route::get('/carrito/procesar-pago', 'BuyController@checkout')->name('checkout');
+Route::post('/carrito/checkoutPay', 'BuyController@checkoutPay')->name('checkoutPay');
 Route::delete('/carrito/eliminar-producto/{id}', 'BuyController@deleteItem')->name('deleteItem');
 Route::post('/carrito/agregar/{id}', 'BuyController@addProduct')->name('addProduct');
 

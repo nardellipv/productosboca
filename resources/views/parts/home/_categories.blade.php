@@ -1,20 +1,22 @@
-<div class="latest-w3">
+<section class="blog_categorie_area">
     <div class="container">
-        {{--<h3 class="tittle1">Categorías</h3>--}}
-        <div class="latest-grids">
+        <div class="row">
             @foreach($categories as $category)
-            <div class="col-md-3 latest-grid">
-                <div class="latest-top">
-                    <a href="{{ url('categoria', $category->slug) }}">
-                    <img  src="{{ asset('images/categories/'.$category->photo) }}" class="img-responsive"  alt="{{ $category->name }}">
-                    </a>
-                    <div class="latest-text">
-                        <h4>{{ $category->name }}</h4>
+                <div class="col-lg-4">
+                    <div class="categories_post">
+                        <img src="{{ asset('images/categories/'.$category->photo) }}" alt="{{$category->name}}">
+                        <div class="categories_details">
+                            <div class="categories_text">
+                                <a href="{{ url('categoria', $category->slug) }}">
+                                    <h5>{{ $category->name }}</h5>
+                                </a>
+                                <div class="border_line"></div>
+                                {{--<p>Enjoy your social life together</p>--}}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             @endforeach
-            <div class="clearfix"></div>
         </div>
     </div>
-</div>
+</section>

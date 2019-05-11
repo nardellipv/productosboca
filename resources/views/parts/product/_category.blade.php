@@ -3,87 +3,52 @@
 @section('title', $category->name)
 
 @section('content')
-    <div class="content">
-        <div class="products-agileinfo">
-            <h2 class="tittle">{{ $category->name }}</h2>
-            <div class="container">
-                <div class="product-agileinfo-grids w3l">
-                    @include('parts.product._aside')
-                    <div class="col-md-9 product-agileinfon-grid1 w3l">
-                        <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-                            <br><br>
-                            <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist">
-                                <div id="myTabContent" class="tab-content">
-                                    <div role="tabpanel" class="tab-pane fade in active" id="home"
-                                         aria-labelledby="home-tab">
-                                        <div class="product-tab">
-                                            @foreach($products as $product)
-                                                <div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-                                                    <div class="grid-arr">
-                                                        <div class="grid-arrival">
-                                                            <figure>
-                                                                <a href="#" class="new-gri" data-toggle="modal"
-                                                                   data-target="#myModal1">
-                                                                    <div class="grid-img">
-                                                                        <img src="{{ asset('images/products/'.$product->photo) }}"
-                                                                             class="img-responsive"
-                                                                             alt="{{ $product->name }}">
-                                                                    </div>
-                                                                    <div class="grid-img">
-                                                                        <img src="{{ asset('images/products/'.$product->photo) }}" class="img-responsive"
-                                                                             alt="{{ $product->name }}">
-                                                                    </div>
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        @if($product->quantity == 0)
-                                                            <div class="ribben1">
-                                                                <p>Sin Stock</p>
-                                                            </div>
-                                                        @endif
-                                                        <div class="women">
-                                                            <h6><a href="{{ url('producto', $product->slug) }}">{{ str_limit($product->name,20) }}</a></h6>
-                                                            <div class="block star-rating" style="margin-left: 38%;">
-                                                                <div class="back-stars small ghosting">
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-
-                                                                    <div class="front-stars" style="width: {{$product->rating}}%">
-                                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <span class="size">Precio:</span>
-                                                            @if($product->offer)
-                                                                <h5>
-                                                                    <del>${{ $product->price }}</del>
-                                                                </h5>
-                                                                <h4 class="item_price">${{ $product->offer }}</h4>
-                                                            @else
-                                                                <p><em class="item_price">${{ $product->price }}</em></p>
-                                                            @endif
-                                                            <br>
-                                                            <a href="{{ url('producto', $product->slug) }}" class="my-cart-b item_add">Ver Más</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                            <div class="clearfix"></div>
+    <div class="container" style="margin-top: 60px;">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                @include('parts.product._aside')
+            </div>
+            <div class="col-xl-9 col-lg-8 col-md-7">
+                <div class="filter-bar d-flex flex-wrap align-items-center">
+                    <h3 style="margin-top: 13px; color: yellow">Categoría {{ $category->name }}</h3>
+                </div>
+                <section class="lattest-product-area pb-40 category-list">
+                    <div class="row">
+                        @foreach($products as $product)
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-product">
+                                    <img class="img-fluid" src="{{ asset('images/products/'.$product->photo) }}" alt="{{ $product->name }}">
+                                    @if($product->quantity == 0)
+                                        <b>Sin Stock</b>
+                                    @endif
+                                    <div class="product-details">
+                                        <h6><a href="{{ url('producto', $product->slug) }}">{{ str_limit($product->name, 21) }}</a></h6>
+                                        <div class="price">
+                                            @if($product->offer)
+                                                <h6>${{ $product->offer }}</h6>
+                                                <h6 class="l-through">${{ $product->price }}</h6>
+                                            @else
+                                                <h6>${{ $product->price }}</h6>
+                                            @endif
+                                        </div>
+                                        <div class="prd-bottom">
+                                            <a href="{{ url('producto', $product->slug) }}" class="social-info">
+                                                <span class="ti-bag"></span>
+                                                <p class="hover-text">Ver Producto</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </ul>
-                        </div>
+                            </div>
+                        @endforeach
                     </div>
+                </section>
+                <div class="filter-bar d-flex flex-wrap align-items-center">
+                    <div class="sorting mr-auto">
+
+                    </div>
+                        {{ $products->render() }}
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
     </div>

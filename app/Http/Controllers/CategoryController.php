@@ -20,6 +20,9 @@ class CategoryController extends Controller
             ->orderBy('created_at', 'ASC')
             ->get();
 
-        return view('parts.product._category', compact('products', 'category', 'lastItems'));
+        $categories = Category::where('status', 'ACTIVE')
+            ->get();
+
+        return view('parts.product._category', compact('products', 'category', 'lastItems', 'categories'));
     }
 }

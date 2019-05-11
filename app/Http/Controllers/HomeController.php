@@ -12,17 +12,27 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $newProducts = Product::where('section', 'NEW')
+        $newProducts = Product::with('category')
+            ->where('section', 'NEW')
             ->orderBy('created_at', 'DESC')
             ->take(4)
             ->get();
 
-        $mostSells = Product::where('section', 'MOSTSELL')
+        $mostSells = Product::with('category')
+            ->where('section', 'MOSTSELL')
             ->orderBy('created_at', 'DESC')
             ->take(4)
             ->get();
 
-        return view('home', compact( 'newProducts', 'mostSells'));
+        $offers = Product::where('offer', '!=', 'NULL')
+            ->orderBy('offer', 'DESC')
+            ->take(3)
+            ->get();
+
+        $expensive = Product::orderBy('price', 'DESC')
+            ->first();
+
+        return view('home', compact('newProducts', 'mostSells', 'offers', 'expensive'));
     }
 
     public function newsLetter(NewsLetterRequest $request)

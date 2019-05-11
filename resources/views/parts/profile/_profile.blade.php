@@ -3,95 +3,76 @@
 @section('title', 'Perfil')
 
 @section('content')
-    <div class="content">
-        <div class="products-agileinfo">
-            <div class="container bootstrap snippet">
-                <div class="row">
-                    <div class="col-sm-10">
-                        <h3>Hola, {{ Auth::user()->name }}</h3>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-3"><!--left col-->
-
-
-                        <div class="text-center">
-                            <img src="{{ asset('styleWeb/img/icons/user.png') }}"
-                                 class="avatar img-circle img-thumbnail" alt="avatar">
-                        </div>
-                        <br>
-
-
-                        <div class="panel panel-default">
-                            <div class="panel-body">Hola, {{ Auth::user()->name }}</div>
-                            <div class="panel-body">{{ Auth::user()->email }}</div>
-                        </div>
-
-
-                    </div><!--/col-3-->
-                    <div class="col-sm-9">
-                        @include('layouts.alerts.success')
-                        @include('layouts.alerts.error')
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#home">Mis Datos</a></li>
-                            <li><a data-toggle="tab" href="#password">Contraseña</a></li>
-                            <li><a data-toggle="tab" href="#pedidos">Mis Pedidos</a></li>
-                            <li><a data-toggle="tab" href=href="{{ route('logout') }}" onclick="event.preventDefault();
-               document.getElementById('logout-form').submit();">Salir</a></li>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="home">
-                                {!! Form::model($user, ['method' => 'PATCH','route' => ['updateData', $user->id],'style'=>'display:inline']) !!}
-                                {{ csrf_field() }}
+    <section class="product_description_area">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#profile" role="tab"
+                       aria-controls="profile" aria-selected="true">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="password-tab" data-toggle="tab" href="#password" role="tab"
+                       aria-controls="password"
+                       aria-selected="false">Modificar Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pedidos-tab" data-toggle="tab" href="#pedidos" role="tab"
+                       aria-controls="pedidos"
+                       aria-selected="false">Pedidos</a>
+                </li>
+{{--                <li class="nav-item">
+                    <a class="nav-link" id="favoritos-tab" data-toggle="tab" href="#favoritos" role="tab"
+                       aria-controls="favoritos"
+                       aria-selected="false">Favoritos</a>
+                </li>--}}
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                {{--tab1--}}
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="section-top-border">
+                        {!! Form::model($user, ['method' => 'PATCH','route' => ['updateData', $user->id],'style'=>'display:inline']) !!}
+                        {{ csrf_field() }}
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <div class="col-xs-6">
-                                        <label for="name">Nombre</label>
-                                        <input class="form-control" id="name"
-                                               name="name"
-                                               value="{{ $user->name }}"
-                                               required="required" type="text"/>
-                                    </div>
+                                    <label for="name">Nombre</label>
+                                    <input class="form-control" id="name"
+                                           name="name"
+                                           value="{{ $user->name }}"
+                                           required="required" type="text"/>
                                 </div>
                                 <div class="form-group">
 
-                                    <div class="col-xs-6">
-                                        <label for="lastname">Apellido:</label>
-                                        <input class="form-control" id="lastname"
-                                               name="lastname"
-                                               value="{{ $user->lastname }}"
-                                               required="required" type="text"/>
-                                    </div>
+                                    <label for="lastname">Apellido:</label>
+                                    <input class="form-control" id="lastname"
+                                           name="lastname"
+                                           value="{{ $user->lastname }}"
+                                           required="required" type="text"/>
                                 </div>
 
                                 <div class="form-group">
 
-                                    <div class="col-xs-6">
-                                        <label for="email">email:</label>
-                                        <input class="form-control" id="email"
-                                               name="email"
-                                               value="{{ $user->email }}"
-                                               required="required" type="email"/>
-                                    </div>
+                                    <label for="email">email:</label>
+                                    <input class="form-control" id="email"
+                                           name="email"
+                                           value="{{ $user->email }}"
+                                           required="required" type="email"/>
                                 </div>
 
                                 <div class="form-group">
-                                    <div class="col-xs-6">
-                                        <label for="address">Dirección:</label>
-                                        <input class="form-control" id="address"
-                                               name="address"
-                                               value="{{ $user->address }}"
-                                               required="required" type="text"/>
-                                    </div>
+                                    <label for="address">Dirección:</label>
+                                    <input class="form-control" id="address"
+                                           name="address"
+                                           value="{{ $user->address }}"
+                                           required="required" type="text"/>
                                 </div>
-                                <div class="form-group">
+                            </div>
 
-                                    <div class="col-xs-6">
-                                        <label for="state">Provincia:</label>
-                                        <select class="form-control" id="id_state" name="state">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label for="state">Provincia:</label>
+                                    <div class="default-select" id="default-select">
+                                        <select name="state">
                                             <option value="{{ $user->state }}">{{ $user->state }}</option>
                                             <option value="CIUDAD AUTÓNOMA DE BUENOS AIRES">
                                                 Ciudad Autónoma de Buenos Aires
@@ -168,116 +149,110 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="form-group">
 
-                                    <div class="col-xs-6">
-                                        <label for="city">Localidad:</label>
-                                        <input class="form-control" id="city"
-                                               name="city"
-                                               value="{{ $user->city }}"
-                                               required="required" type="text"/>
-                                    </div>
+                                    <label for="city">Localidad:</label>
+                                    <input class="form-control" id="city"
+                                           name="city"
+                                           value="{{ $user->city }}"
+                                           required="required" type="text"/>
                                 </div>
                                 <div class="form-group">
 
-                                    <div class="col-xs-6">
-                                        <label for="id_postalcode">Código Postal:</label>
-                                        <input class="form-control" id="id_postalcode"
-                                               name="postalcode"
-                                               value="{{ $user->postalcode }}"
-                                               required="required" type="text"/>
-                                    </div>
+                                    <label for="id_postalcode">Código Postal:</label>
+                                    <input class="form-control" id="id_postalcode"
+                                           name="postalcode"
+                                           value="{{ $user->postalcode }}"
+                                           required="required" type="text"/>
                                 </div>
                                 <div class="form-group">
 
-                                    <div class="col-xs-6">
-                                        <label for="phone">Teléfono:</label>
-                                        <input class="form-control" id="phone"
-                                               name="phone"
-                                               value="{{ $user->phone }}"
-                                               required="required" type="text"/>
-                                    </div>
+                                    <label for="phone">Teléfono:</label>
+                                    <input class="form-control" id="phone"
+                                           name="phone"
+                                           value="{{ $user->phone }}"
+                                           required="required" type="text"/>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-xs-12">
-                                        <br>
-                                        <button type="submit" class="btn btn-success btn-lg" style="width:100%;">
-                                            Actualizar datos
-                                        </button>
-                                    </div>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <button type="submit" class="genric-btn success" style="width:100%;">
+                                        Actualizar datos
+                                    </button>
                                 </div>
-                                {!! Form::Close() !!}
-
-                                <hr>
-
-                            </div><!--/tab-pane-->
-                            <div class="tab-pane" id="password">
-                                {!! Form::model($user, ['method' => 'PATCH','route' => ['updatePassword', $user->id],'style'=>'display:inline']) !!}
-                                {{ csrf_field() }}
-                                <div class="form-group">
-
-                                    <div class="col-xs-6">
-                                        <label for="password">Nueva Contraseña:</label>
-                                        <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                               id="password"
-                                               name="password"
-                                               required="required" type="password"/>
-                                    </div>
-                                    @if ($errors->has('password'))
-                                        <span class="invalid-feedback" role="alert">
+                            </div>
+                        {!! Form::Close() !!}
+                    </div>
+                </div>
+                {{--tab2--}}
+                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                    {!! Form::model($user, ['method' => 'PATCH','route' => ['updatePassword', $user->id],'style'=>'display:inline']) !!}
+                    {{ csrf_field() }}
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 offset-2">
+                            <div class="form-group">
+                                <label for="password">Nueva Contraseña:</label>
+                                <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                       id="password"
+                                       name="password"
+                                       required="required" type="password"/>
+                            </div>
+                            @if ($errors->has('password'))
+                                <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                    @endif
-                                </div>
-                                <div class="form-group">
+                            @endif
+                            <div class="form-group">
 
-                                    <div class="col-xs-6">
-                                        <label for="password_confirmation">Verificar Contraseña:</label>
-                                        <input class="form-control" id="password_confirmation"
-                                               name="password_confirmation"
-                                               required="required" type="password"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-xs-12">
-                                        <br>
-                                        <button type="submit" class="btn btn-success btn-lg" style="width:100%;">
-                                            Actualizar datos
-                                        </button>
-                                    </div>
-                                </div>
-                                {!! Form::Close() !!}
-
-                            </div><!--/tab-pane-->
-                            <div class="tab-pane" id="pedidos">
-                                <div class="bs-docs-example">
-                                    <table class="table">
-                                        <thead>
-                                        <tr>
-                                            <th>N° Orden</th>
-                                            <th>Producto</th>
-                                            <th>Cantidad</th>
-                                            <th>Total</th>
-                                            <th>Fecha Compra</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        @foreach($pedidos as $pedido)
-                                            <tr>
-                                                <td>{{ $pedido->serial_buy }}</td>
-                                                <td>{{ $pedido->product->name }}</td>
-                                                <td>{{ $pedido->quantity }}</td>
-                                                <td>${{ $pedido->total }}</td>
-                                                <td>{{ Date::parse($pedido->created_at)->format('j/m/Y') }}</td>
-                                            </tr>
-                                        @endforeach
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <label for="password_confirmation">Verificar Contraseña:</label>
+                                <input class="form-control" id="password_confirmation"
+                                       name="password_confirmation"
+                                       required="required" type="password"/>
                             </div>
                         </div>
                     </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <br>
+                                <button type="submit" class="genric-btn success" style="width:100%;">
+                                    Actualizar datos
+                                </button>
+                            </div>
+                        </div>
+                        {!! Form::Close() !!}
                 </div>
+                {{--tab3--}}
+                <div class="tab-pane fade" id="pedidos" role="tabpanel" aria-labelledby="pedidos-tab">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>N° Orden</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Fecha Compra</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($pedidos as $pedido)
+                            <tr>
+                                <td>{{ $pedido->serial_buy }}</td>
+                                <td>{{ $pedido->product->name }}</td>
+                                <td>{{ $pedido->quantity }}</td>
+                                <td>${{ $pedido->total }}</td>
+                                <td>{{ Date::parse($pedido->created_at)->format('j/m/Y') }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                {{--tab4--}}
+    {{--            <div class="tab-pane fade" id="favoritos" role="tabpanel" aria-labelledby="favoritos-tab">
+                </div>--}}
             </div>
         </div>
+    </section>
 @endsection

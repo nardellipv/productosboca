@@ -2,179 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264b6d28-ad2c-43fb-a98b-a61a39193336" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/email/_compraInfo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917069.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917069.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917084.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917084.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917089.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917089.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917206.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917206.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917287.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917287.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917306.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917306.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551917317.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551917317.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1551918288.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1551918288.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552000295.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552000295.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552000323.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552000323.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552000332.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552000332.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552000722.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552000722.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552000746.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552000746.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552000756.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552000756.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001022.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001022.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001057.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001057.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001070.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001070.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001258.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001258.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001278.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001278.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001285.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001285.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001646.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001646.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001736.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001736.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001919.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001919.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552001959.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552001959.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002240.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002240.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002256.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002328.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002328.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002345.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002345.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002493.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002493.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002524.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002524.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002627.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002627.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002643.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552002643.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552002995.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552003015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552003055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552738600.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552738600.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/1552738672.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/1552738672.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styleWeb/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styleWeb/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/banner/banner-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/styleWeb/img/banner/banner-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/banner/common-banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/styleWeb/img/banner/common-banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/add.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/c2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/c4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/c6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/causes/causes-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/causes/causes-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/causes/causes-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/feature-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/latest-post/l-post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/latest-post/l-post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/latest-post/l-post-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/latest-post/l-post-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/next.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/popular-post/post1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/popular-post/post2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/popular-post/post3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/popular-post/post4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/post-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/post-img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/blog/prev.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/brand/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/brand/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/brand/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/brand/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/brand/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/cart.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/category/c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/category/c2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/category/c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/category/c4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/category/c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/category/s-p1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/elements/g8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/exclusive.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/fav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/features/f-icon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/features/f-icon4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/i8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/l8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/login.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/men-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/ob1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/ob2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/ob3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/q1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/img/r9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/scss/theme/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styleWeb/scss/theme/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styleWeb/scss/theme/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styleWeb/scss/theme/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/_contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/_contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/_menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/home/_categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/home/_categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/home/_howBuy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/home/_howBuy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/home/_newProducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/home/_newProducts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/home/_topSelling.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/home/_topSelling.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/information/_payments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/information/_payments.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/information/_policity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/information/_policity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/information/_sending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/information/_sending.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/information/_termCondition.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/information/_termCondition.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/information/_whoBuy.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/product/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/product/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/product/_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/product/_category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/profile/_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/profile/_profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productosboca.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -187,12 +18,34 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_offerBanner.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php">
+    <leaf>
+      <file leaf-file-name="_checkout.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state relative-caret-position="471">
+              <caret line="331" column="61" selection-start-line="331" selection-start-column="61" selection-end-line="331" selection-end-column="61" />
+              <folding>
+                <element signature="e#4841#8824#0#HTML" />
+                <element signature="e#12301#16604#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_cart.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuyController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BuyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-697">
+              <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -208,10 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>shap</find>
-      <find>slider</find>
-      <find>img/</find>
-      <find>img/slider/</find>
       <find>active</find>
       <find>owl</find>
       <find>nex</find>
@@ -238,6 +87,10 @@
       <find>linear-gradient(90deg, #ffba00 0%, #ff6c00 100%)</find>
       <find>min-width: 991px</find>
       <find>alt=&quot;&quot;</find>
+      <find>total +</find>
+      <find>envio</find>
+      <find>envio.txt</find>
+      <find>Total + Envío</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -246,8 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" />
         <option value="$PROJECT_DIR$/public/styleWeb/css/style.css" />
         <option value="$PROJECT_DIR$/public/styleWeb/css/camera.css" />
         <option value="$PROJECT_DIR$/resources/views/external/pixelFace.blade.php" />
@@ -269,9 +120,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/DiscountController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BuyController.php" />
         <option value="$PROJECT_DIR$/storage/app/public/envio.txt" />
-        <option value="$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/information/_sending.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/information/_payments.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/information/_policity.blade.php" />
@@ -289,7 +138,6 @@
         <option value="$PROJECT_DIR$/resources/views/parts/home/_categories.blade.php" />
         <option value="$PROJECT_DIR$/public/styleWeb/css/main.css" />
         <option value="$PROJECT_DIR$/public/styleWeb/scss/theme/_header.scss" />
-        <option value="$PROJECT_DIR$/resources/views/parts/_menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/home/_topSelling.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/home/_newProducts.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/product/_category.blade.php" />
@@ -297,6 +145,11 @@
         <option value="$PROJECT_DIR$/resources/views/parts/product/_product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/_header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/parts/_menu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/email/_compraInfo.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BuyController.php" />
+        <option value="$PROJECT_DIR$/storage/app/public/costoenvio.txt" />
+        <option value="$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php" />
       </list>
     </option>
   </component>
@@ -453,6 +306,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -481,47 +335,51 @@
             <path>
               <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
               <item name="productosboca" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
               <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="productosboca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="productosboca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -532,16 +390,16 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Webs\productosboca\resources\views\parts\cart" />
-      <recent name="D:\Webs\productosboca\public\styleWeb" />
-      <recent name="D:\Webs\productosboca" />
-      <recent name="D:\Webs\productosboca\resources\views\parts\home" />
-      <recent name="D:\Webs\productosboca\resources\views\admin\parts\dashboard" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Webs\productosboca\resources\views\parts" />
       <recent name="D:\Webs\productosboca\resources\views\parts\home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webs\productosboca\storage\app\public" />
+      <recent name="D:\Webs\productosboca\resources\views\email" />
+      <recent name="D:\Webs\productosboca\resources\views\parts\cart" />
+      <recent name="D:\Webs\productosboca\public\styleWeb" />
+      <recent name="D:\Webs\productosboca" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -627,12 +485,13 @@
       <workItem from="1557149973147" duration="14352000" />
       <workItem from="1557349892277" duration="10168000" />
       <workItem from="1557438790601" duration="5380000" />
-      <workItem from="1557496150369" duration="10646000" />
+      <workItem from="1557496150369" duration="11427000" />
+      <workItem from="1557578850159" duration="1805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466768000" />
+    <option name="totallyTimeSpent" value="469354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-140" width="1616" height="916" extended-state="6" />
@@ -673,37 +532,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="7" column="110586" selection-start-line="7" selection-start-column="110586" selection-end-line="7" selection-end-column="110586" />
-          <folding>
-            <element signature="e#53480#53680#2" expanded="true" />
-            <element signature="e#53886#54035#2" expanded="true" />
-            <element signature="e#54534#54680#2" expanded="true" />
-            <element signature="e#54981#55147#1" expanded="true" />
-            <element signature="e#65468#65711#2" expanded="true" />
-            <element signature="e#66536#66785#2" expanded="true" />
-            <element signature="e#92436#92626#2" expanded="true" />
-            <element signature="e#92672#92862#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styleWeb/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="7761" column="1" selection-start-line="7761" selection-start-column="1" selection-end-line="7761" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/parts/_contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -747,31 +575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/envio.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1236">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="348" column="97" selection-start-line="348" selection-start-column="97" selection-end-line="348" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BuyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="151" column="45" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -846,24 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/styleWeb/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="69" column="106" selection-start-line="69" selection-start-column="106" selection-end-line="69" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_slider.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -937,31 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/_menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_categories.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_newProducts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="116" selection-start-line="3" selection-start-column="116" selection-end-line="3" selection-end-column="116" />
         </state>
       </provider>
     </entry>
@@ -1000,6 +772,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/_menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_bannerTop.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_categories.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_slider.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="95" lean-forward="true" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_topSelling.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1007,10 +810,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_offerBanner.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/home/_newProducts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state relative-caret-position="51">
+          <caret line="3" column="116" selection-start-line="3" selection-start-column="116" selection-end-line="3" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/email/_compraInfo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="91" column="117" selection-start-line="91" selection-start-column="117" selection-end-line="91" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/envio.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/costoenvio.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_checkout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="331" column="61" selection-start-line="331" selection-start-column="61" selection-end-line="331" selection-end-column="61" />
+          <folding>
+            <element signature="e#4841#8824#0#HTML" />
+            <element signature="e#12301#16604#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/parts/cart/_cart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BuyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
         </state>
       </provider>
     </entry>

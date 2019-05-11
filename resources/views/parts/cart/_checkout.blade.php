@@ -329,7 +329,7 @@
                                 @endforeach
                             </ul>
                             <ul class="list list_2">
-                                <li><a href="#">Total + Envío <span>${{ $costoEnvio }}</span></a></li>
+                                <li><a href="#">Total + Envío <span>${{ $totalCart + '350'}}</span></a></li>
                             </ul>
                             <br>
                             <div class="payment_item">
@@ -337,7 +337,7 @@
                                 <small>No es necesario tener cuenta en los medios de pagos para utilizarlos.
                                 </small>
                                 <div class="radion_btn">
-                                    <input type="radio" id="f-option5" name="payment" value="mercadopago">
+                                    <input type="radio" id="f-option5" name="payment" value="mercadopago" required>
                                     <label for="f-option5">MercadoPago</label>
                                     <img src="{{ asset('styleWeb/img/mediospagos/mercadopago.png') }}" width="15%">
                                     <div class="check"></div>
@@ -355,7 +355,7 @@
                                     pago seguro y confiable.</p>
                             </div>
                             <div class="creat_account">
-                                <input type="checkbox" id="f-option4" name="selector">
+                                <input type="checkbox" id="f-option4" name="selector" checked required>
                                 <label for="f-option4">He leido y aceptado los </label>
                                 <a href="{{ route('termns') }}">términos y condiciones*</a>
                             </div>
